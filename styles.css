@@ -63,59 +63,59 @@ body {
   transform-origin: 50% 50%;
 }
 
-.segment.one {
-  transform: rotate(0deg);
+.segment.rest-and-relax {
+  transform: rotate(22.5deg);
   background-color: #fff2f6;
 }
-.segment.one:hover {
+.segment.rest-and-relax:hover {
   background-color: #ffd1dc;
 }
-.segment.two {
-  transform: rotate(45deg);
+.segment.eat-well {
+  transform: rotate(67.5deg);
   background-color: #e9f7ee;
 }
-.segment.two:hover {
+.segment.eat-well:hover {
   background-color: #a3e7bf;
 }
-.segment.three {
-  transform: rotate(90deg);
+.segment.move-more {
+  transform: rotate(112.5deg);
   background-color: #f5f5ff;
 }
-.segment.three:hover {
+.segment.move-more:hover {
   background-color: #e6e6fa;
 }
-.segment.four {
-  transform: rotate(135deg);
+.segment.lift-your-spirits {
+  transform: rotate(157.5deg);
   background-color: #fff3e3;
 }
-.segment.four:hover {
+.segment.lift-your-spirits:hover {
   background-color: #ffdab9;
 }
-.segment.five {
-  transform: rotate(180deg);
+.segment.connect {
+  transform: rotate(202.5deg);
   background-color: #e6ecf0;
 }
-.segment.five:hover {
+.segment.connect:hover {
   background-color: #aec6cf;
 }
-.segment.six {
-  transform: rotate(225deg);
+.segment.practical-matters {
+  transform: rotate(247.5deg);
   background-color: #fffff5;
 }
-.segment.six:hover {
+.segment.practical-matters:hover {
   background-color: #ffff7a;
 }
-.segment.seven {
-  transform: rotate(270deg);
+.segment.mind-and-emotions {
+  transform: rotate(292.5deg);
   background-color: #fee3dc;
 }
-.segment.seven:hover {
+.segment.mind-and-emotions:hover {
   background-color: #f88379;
 }
-.segment.eight {
-  transform: rotate(315deg);
+.segment.physical-comfort {
+  transform: rotate(337.5deg);
   background-color: #e3d7e3;
 }
-.segment.eight:hover {
+.segment.physical-comfort:hover {
   background-color: #c8a2c8;
 }
