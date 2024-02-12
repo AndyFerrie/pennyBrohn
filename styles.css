@@ -16,7 +16,6 @@ body {
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
-  /* border: black solid 1px; */
 }
 
 .circle.one {
@@ -66,58 +65,57 @@ body {
 
 .segment.one {
   transform: rotate(0deg);
-  background-color: #FFF2F6;
+  background-color: #fff2f6;
 }
 .segment.one:hover {
-  background-color: #FFD1DC;
+  background-color: #ffd1dc;
 }
 .segment.two {
   transform: rotate(45deg);
-  background-color: #E9F7EE;
+  background-color: #e9f7ee;
 }
 .segment.two:hover {
-  background-color: #A3E7BF;
+  background-color: #a3e7bf;
 }
 .segment.three {
   transform: rotate(90deg);
-  background-color: #F5F5FF;
+  background-color: #f5f5ff;
 }
 .segment.three:hover {
-  background-color: #E6E6FA;
+  background-color: #e6e6fa;
 }
 .segment.four {
   transform: rotate(135deg);
-  background-color: #FFF3E3;
+  background-color: #fff3e3;
 }
 .segment.four:hover {
-  background-color: #FFDAB9;
+  background-color: #ffdab9;
 }
 .segment.five {
   transform: rotate(180deg);
-  background-color: #E6ECF0;
+  background-color: #e6ecf0;
 }
 .segment.five:hover {
-  background-color: #AEC6CF;
+  background-color: #aec6cf;
 }
 .segment.six {
   transform: rotate(225deg);
-  background-color: #FFFFF5;
+  background-color: #fffff5;
 }
 .segment.six:hover {
-  background-color: #FFFF7A;
+  background-color: #ffff7a;
 }
 .segment.seven {
   transform: rotate(270deg);
-  background-color: #FEE3DC;
+  background-color: #fee3dc;
 }
 .segment.seven:hover {
-  background-color: #F88379;
+  background-color: #f88379;
 }
 .segment.eight {
   transform: rotate(315deg);
-  background-color: #E3D7E3;
+  background-color: #e3d7e3;
 }
 .segment.eight:hover {
-  background-color: #C8A2C8;
+  background-color: #c8a2c8;
 }
-
