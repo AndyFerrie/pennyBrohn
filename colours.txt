@@ -1,32 +1,6 @@
-Icterine (Darker Yellow): FFFF7A
-Pale Pink: #FFD1DC
-Mint Green: #A3E7BF
-Lavender: #E6E6FA
-Peach: #FFDAB9
-Baby Blue: #AEC6CF
-Light Yellow: #FFFFE0
-Soft Coral: #F88379
-Lilac: #C8A2C8
-Lighter Pale Pink: #FFE6EC
-Lighter Mint Green: #D6F3E0
-Lighter Lavender: #F0F0FF
-Lighter Peach: #FFE9D1
-Lighter Baby Blue: #CED9E0
-Lighter Light Yellow: #FFFFF0
-Lighter Soft Coral: #FDBBB2
-Lighter Lilac: #DBCDDB 
-Even Lighter Pale Pink: #FFF2F6
-Even Lighter Mint Green: #E9F7EE
-Even Lighter Lavender: #F5F5FF
-Even Lighter Peach: #FFF3E3
-Even Lighter Baby Blue: #E6ECF0
-Even Lighter Light Yellow: #FFFFF5
-Even Lighter Soft Coral: #FEE3DC
-Even Lighter Lilac: #E3D7E3
-
-Eat Well Blue: #64DCD2
-Rest & Relax Purple: #CAC7F2
-Move More Blue: #D2F0F0
-Mind Matters Orange: #FF8B00
-Lift Your Spirits Yellow: #FFDC50
-Feel Better Pink: #FFE1DF
+Eat Well/Practical Matters Blue (#64DCD2) - Lighter Shade: #A2F3EC
+Rest & Relax/Connect Purple (#CAC7F2) - Lighter Shade: #E2E0FF
+Move More Blue (#D2F0F0) - Lighter Shade: #E8FAFA
+Mind Matters Orange (#FF8B00) - Lighter Shade: #FFA545
+Lift Your Spirits Yellow (#FFDC50) - Lighter Shade: #FFEB85
+Feel Better Pink (#FFE1DF) - Lighter Shade: #FFF1F0
