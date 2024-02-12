@@ -27,38 +27,38 @@ body {
   pointer-events: none;
 }
 
-.circle.one {
+.circle.six {
   position: relative;
   width: 400px;
   height: 400px;
 }
 
-.circle.two {
+.circle.five {
   width: 350px;
   height: 350px;
 }
 
-.circle.three {
+.circle.four {
   width: 300px;
   height: 300px;
 }
 
-.circle.four {
+.circle.three {
   width: 250px;
   height: 250px;
 }
 
-.circle.five {
+.circle.two {
   width: 200px;
   height: 200px;
 }
 
-.circle.six {
+.circle.one {
   width: 150px;
   height: 150px;
 }
 
-.circle.seven {
+.circle.middle {
   width: 100px;
   height: 100px;
   z-index: 101;
