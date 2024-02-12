@@ -16,7 +16,7 @@ body {
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
-  border: darkgray 1px solid;
+  box-shadow: 0 0 0 1px darkgray;
 }
 
 .overlay-circle {
@@ -117,7 +117,7 @@ body {
 /* Rest & Relax/Connect Purple (#CAC7F2) - Lighter Shade: (#E2E0FF) */
 .segment.rest-and-relax {
   transform: rotate(22.5deg);
-  background-color: #e2e0ff;
+  /* background-color: #e2e0ff; */
 }
 .circle.one.segment.rest-and-relax {
   background-color: #e2e0ff;
