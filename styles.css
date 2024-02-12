@@ -34,6 +34,12 @@ body {
   pointer-events: none;
 }
 
+.circle.base {
+  width: 600px;
+  height: 600px;
+  background-color: lightgray;
+}
+
 .circle.six {
   position: relative;
   width: 600px;
@@ -127,65 +133,81 @@ body {
 }
 
 /* Rest & Relax/Connect Purple (#CAC7F2) - Lighter Shade: (#E2E0FF) */
+.circle.base .segment.rest-and-relax {
+  background-color: #e2e0ff;
+}
 .segment.rest-and-relax {
   transform: rotate(22.5deg);
-  background-color: #e2e0ff;
 }
 .segment.rest-and-relax:hover {
   background-color: #cac7f2;
 }
 /* Eat Well/Practical Matters Blue (#64DCD2) - Lighter Shade: (#A2F3EC) */
+.circle.base .segment.eat-well {
+  background-color: #a2f3ec;
+}
 .segment.eat-well {
   transform: rotate(67.5deg);
-  background-color: #a2f3ec;
 }
 .segment.eat-well:hover {
   background-color: #64dcd2;
 }
 /* Move More Blue (#D2F0F0) - Lighter Shade: (#E8FAFA) */
+.circle.base .segment.move-more {
+  background-color: #e8fafa;
+}
 .segment.move-more {
   transform: rotate(112.5deg);
-  background-color: #e8fafa;
 }
 .segment.move-more:hover {
   background-color: #d2f0f0;
 }
 /* Lift Your Spirits Yellow (#FFDC50) - Lighter Shade: (#FFEB85) */
+.circle.base .segment.lift-your-spirits {
+  background-color: #ffeb85;
+}
 .segment.lift-your-spirits {
   transform: rotate(157.5deg);
-  background-color: #ffeb85;
 }
 .segment.lift-your-spirits:hover {
   background-color: #ffdc50;
 }
 /* Rest & Relax/Connect Purple (#CAC7F2) - Lighter Shade: (#E2E0FF) */
+.circle.base .segment.connect {
+  background-color: #e2e0ff;
+}
 .segment.connect {
   transform: rotate(202.5deg);
-  background-color: #e2e0ff;
 }
 .segment.connect:hover {
   background-color: #cac7f2;
 }
 /* Eat Well/Practical Matters Blue (#64DCD2) - Lighter Shade: (#A2F3EC) */
+.circle.base .segment.practical-matters {
+  background-color: #a2f3ec;
+}
 .segment.practical-matters {
   transform: rotate(247.5deg);
-  background-color: #a2f3ec;
 }
 .segment.practical-matters:hover {
   background-color: #64dcd2;
 }
 /* Mind Matters Orange (#FF8B00) - Lighter Shade: (#FFA545) */
+.circle.base .segment.mind-and-emotions {
+  background-color: #ffa545;
+}
 .segment.mind-and-emotions {
   transform: rotate(292.5deg);
-  background-color: #ffa545;
 }
 .segment.mind-and-emotions:hover {
   background-color: #ff8b00;
 }
 /* Feel Better Pink (#FFE1DF) - Lighter Shade: (#FFF1F0) */
+.circle.base .segment.physical-comfort {
+  background-color: #fff1f0;
+}
 .segment.physical-comfort {
   transform: rotate(337.5deg);
-  background-color: #fff1f0;
 }
 .segment.physical-comfort:hover {
   background-color: #ffe1df;
