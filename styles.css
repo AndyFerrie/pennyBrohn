@@ -16,6 +16,15 @@ body {
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
+  border: darkgray 1px solid;
+}
+
+.overlay-circle {
+  z-index: 100;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  pointer-events: none;
 }
 
 .circle.one {
@@ -63,59 +72,112 @@ body {
   transform-origin: 50% 50%;
 }
 
+.overlay-segment {
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: darkgray;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+}
+
+.overlay-segment:nth-child(1) {
+  transform: rotate(22.5deg);
+}
+
+.overlay-segment:nth-child(2) {
+  transform: rotate(67.5deg);
+}
+
+.overlay-segment:nth-child(3) {
+  transform: rotate(112.5deg);
+}
+
+.overlay-segment:nth-child(4) {
+  transform: rotate(157.5deg);
+}
+
+.overlay-segment:nth-child(5) {
+  transform: rotate(202.5deg);
+}
+
+.overlay-segment:nth-child(6) {
+  transform: rotate(247.5deg);
+}
+
+.overlay-segment:nth-child(7) {
+  transform: rotate(292.5deg);
+}
+
+.overlay-segment:nth-child(8) {
+  transform: rotate(337.5deg);
+}
+
+/* Rest & Relax/Connect Purple (#CAC7F2) - Lighter Shade: (#E2E0FF) */
 .segment.rest-and-relax {
   transform: rotate(22.5deg);
-  background-color: #fff2f6;
+  background-color: #e2e0ff;
+}
+.circle.one.segment.rest-and-relax {
+  background-color: #e2e0ff;
 }
 .segment.rest-and-relax:hover {
-  background-color: #ffd1dc;
+  background-color: #cac7f2;
 }
+/* Eat Well/Practical Matters Blue (#64DCD2) - Lighter Shade: (#A2F3EC) */
 .segment.eat-well {
   transform: rotate(67.5deg);
-  background-color: #e9f7ee;
+  background-color: #a2f3ec;
 }
 .segment.eat-well:hover {
-  background-color: #a3e7bf;
+  background-color: #64dcd2;
 }
+/* Move More Blue (#D2F0F0) - Lighter Shade: (#E8FAFA) */
 .segment.move-more {
   transform: rotate(112.5deg);
-  background-color: #f5f5ff;
+  background-color: #e8fafa;
 }
 .segment.move-more:hover {
-  background-color: #e6e6fa;
+  background-color: #d2f0f0;
 }
+/* Lift Your Spirits Yellow (#FFDC50) - Lighter Shade: (#FFEB85) */
 .segment.lift-your-spirits {
   transform: rotate(157.5deg);
-  background-color: #fff3e3;
+  background-color: #ffeb85;
 }
 .segment.lift-your-spirits:hover {
-  background-color: #ffdab9;
+  background-color: #ffdc50;
 }
+/* Rest & Relax/Connect Purple (#CAC7F2) - Lighter Shade: (#E2E0FF) */
 .segment.connect {
   transform: rotate(202.5deg);
-  background-color: #e6ecf0;
+  background-color: #e2e0ff;
 }
 .segment.connect:hover {
-  background-color: #aec6cf;
+  background-color: #cac7f2;
 }
+/* Eat Well/Practical Matters Blue (#64DCD2) - Lighter Shade: (#A2F3EC) */
 .segment.practical-matters {
   transform: rotate(247.5deg);
-  background-color: #fffff5;
+  background-color: #a2f3ec;
 }
 .segment.practical-matters:hover {
-  background-color: #ffff7a;
+  background-color: #64dcd2;
 }
+/* Mind Matters Orange (#FF8B00) - Lighter Shade: (#FFA545) */
 .segment.mind-and-emotions {
   transform: rotate(292.5deg);
-  background-color: #fee3dc;
+  background-color: #ffa545;
 }
 .segment.mind-and-emotions:hover {
-  background-color: #f88379;
+  background-color: #ff8b00;
 }
+/* Feel Better Pink (#FFE1DF) - Lighter Shade: (#FFF1F0) */
 .segment.physical-comfort {
   transform: rotate(337.5deg);
-  background-color: #e3d7e3;
+  background-color: #fff1f0;
 }
 .segment.physical-comfort:hover {
-  background-color: #c8a2c8;
+  background-color: #ffe1df;
 }
