@@ -1,3 +1,9 @@
+* {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -66,9 +72,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #c5e0b4;
-  color: white;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 .segment {
@@ -88,6 +91,30 @@ body {
   top: 50%;
   left: 50%;
   transform-origin: 0 0;
+}
+
+.text-container {
+  position: absolute;
+  top: 117px;
+  left: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%) rotate(157deg);
+}
+
+.midnight-line {
+  position: absolute;
+  width: 2px;
+  height: 50%;
+  background-color: red;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-container br {
+  margin: 3px 7px;
 }
 
 .overlay-segment:nth-child(1) {
@@ -126,9 +153,6 @@ body {
 .segment.rest-and-relax {
   transform: rotate(22.5deg);
   /* background-color: #e2e0ff; */
-}
-.circle.one.segment.rest-and-relax {
-  background-color: #e2e0ff;
 }
 .segment.rest-and-relax:hover {
   background-color: #cac7f2;
