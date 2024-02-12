@@ -61,6 +61,14 @@ body {
 .circle.seven {
   width: 100px;
   height: 100px;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c5e0b4;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .segment {
