@@ -2,6 +2,7 @@
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  font-size: 24px;
 }
 
 body {
@@ -22,41 +23,41 @@ body {
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 0 1px darkgray;
+  box-shadow: 0 0 0 3px white;
 }
 
 .overlay-circle {
   z-index: 100;
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   pointer-events: none;
 }
 
 .circle.six {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
 }
 
 .circle.five {
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 500px;
 }
 
 .circle.four {
-  width: 300px;
-  height: 300px;
+  width: 405px;
+  height: 405px;
 }
 
 .circle.three {
-  width: 250px;
-  height: 250px;
+  width: 315px;
+  height: 315px;
 }
 
 .circle.two {
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
 }
 
 .circle.one {
@@ -65,8 +66,8 @@ body {
 }
 
 .circle.middle {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   z-index: 101;
   display: flex;
   justify-content: center;
@@ -86,35 +87,11 @@ body {
 .overlay-segment {
   position: absolute;
   width: 50%;
-  height: 1px;
-  background-color: darkgray;
+  height: 3px;
+  background-color: white;
   top: 50%;
   left: 50%;
   transform-origin: 0 0;
-}
-
-.text-container {
-  position: absolute;
-  top: 117px;
-  left: 39px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-50%) rotate(157deg);
-}
-
-.midnight-line {
-  position: absolute;
-  width: 2px;
-  height: 50%;
-  background-color: red;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.text-container br {
-  margin: 3px 7px;
 }
 
 .overlay-segment:nth-child(1) {
@@ -152,7 +129,7 @@ body {
 /* Rest & Relax/Connect Purple (#CAC7F2) - Lighter Shade: (#E2E0FF) */
 .segment.rest-and-relax {
   transform: rotate(22.5deg);
-  /* background-color: #e2e0ff; */
+  background-color: #e2e0ff;
 }
 .segment.rest-and-relax:hover {
   background-color: #cac7f2;
