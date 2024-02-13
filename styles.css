@@ -116,15 +116,9 @@ body {
   height: 150px;
 }
 
-.circle.middle {
+.circle.zero {
   width: 75px;
   height: 75px;
-  z-index: 101;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #c5e0b4;
 }
 
 .segment {

@@ -1,6 +1,6 @@
 // Get all circle divs
 const circles = document.querySelectorAll(
-  ".circle.one, .circle.two, .circle.three, .circle.four, .circle.five, .circle.six",
+  ".circle.zero, .circle.one, .circle.two, .circle.three, .circle.four, .circle.five, .circle.six",
 );
 
 // Loop through each circle div
