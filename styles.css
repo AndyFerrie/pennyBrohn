@@ -37,7 +37,7 @@ body {
 .circle.base {
   width: 600px;
   height: 600px;
-  background-color: lightgray;
+  background-color: #f7f6f6;
 }
 
 .circle.six {
@@ -140,59 +140,43 @@ body {
   transform: rotate(337.5deg);
 }
 
-/* Rest & Relax/Connect Purple (#CAC7F2) - Lighter Shade: (#E2E0FF) */
-.circle.base .segment.rest-and-relax {
-  background-color: #e8e7fa;
-}
-.segment.rest-and-relax:hover {
+/* Rest & Relax/Connect Purple (#CAC7F2)*/
+.segment.rest-and-relax:hover,
+.segment.rest-and-relax.selected {
   background-color: #cac7f2;
 }
-/* Eat Well/Practical Matters Blue (#64DCD2) - Lighter Shade: (#A2F3EC) */
-.circle.base .segment.eat-well {
-  background-color: #d6f9f6;
-}
-.segment.eat-well:hover {
+/* Eat Well/Practical Matters Blue (#64DCD2)*/
+.segment.eat-well:hover,
+.segment.eat-well.selected {
   background-color: #64dcd2;
 }
-/* Move More Blue (#D2F0F0) - Lighter Shade: (#E8FAFA) */
-.circle.base .segment.move-more {
-  background-color: #e8fafa;
-}
-.segment.move-more:hover {
+/* Move More Blue (#D2F0F0)*/
+.segment.move-more:hover,
+.segment.move-more.selected {
   background-color: #d2f0f0;
 }
-/* Lift Your Spirits Yellow (#FFDC50) - Lighter Shade: (#FFEB85) */
-.circle.base .segment.lift-your-spirits {
-  background-color: #f7eec3;
-}
-.segment.lift-your-spirits:hover {
+/* Lift Your Spirits Yellow (#FFDC50)*/
+.segment.lift-your-spirits:hover,
+.segment.lift-your-spirits.selected {
   background-color: #ffdc50;
 }
-/* Rest & Relax/Connect Purple (#CAC7F2) - Lighter Shade: (#E2E0FF) */
-.circle.base .segment.connect {
-  background-color: #e8e7fa;
-}
-.segment.connect:hover {
+/* Rest & Relax/Connect Purple (#CAC7F2)*/
+.segment.connect:hover,
+.segment.connect.selected {
   background-color: #cac7f2;
 }
-/* Eat Well/Practical Matters Blue (#64DCD2) - Lighter Shade: (#A2F3EC) */
-.circle.base .segment.practical-matters {
-  background-color: #d6f9f6;
-}
-.segment.practical-matters:hover {
+/* Eat Well/Practical Matters Blue (#64DCD2)*/
+.segment.practical-matters:hover,
+.segment.practical-matters.selected {
   background-color: #64dcd2;
 }
-/* Mind Matters Orange (#FF8B00) - Lighter Shade: (#FFA545) */
-.circle.base .segment.mind-and-emotions {
-  background-color: #fbe1c5;
-}
-.segment.mind-and-emotions:hover {
+/* Mind Matters Orange (#FF8B00)*/
+.segment.mind-and-emotions:hover,
+.segment.mind-and-emotions.selected {
   background-color: #ff8b00;
 }
-/* Feel Better Pink (#FFE1DF) - Lighter Shade: (#FFF1F0) */
-.circle.base .segment.physical-comfort {
-  background-color: #fff1f0;
-}
-.segment.physical-comfort:hover {
+/* Feel Better Pink (#FFE1DF)*/
+.segment.physical-comfort:hover,
+.segment.physical-comfort.selected {
   background-color: #ffe1df;
 }
