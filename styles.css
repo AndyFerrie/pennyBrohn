@@ -15,7 +15,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  min-width: 650px;
+  height: 650px;
 }
 
 .circle {
@@ -179,4 +180,9 @@ body {
 .segment.physical-comfort:hover,
 .segment.physical-comfort.selected {
   background-color: #ffe1df;
+}
+
+.questions-container {
+  color: black;
+  width: 100%;
 }
