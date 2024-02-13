@@ -24,7 +24,7 @@ body {
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 0 3px white;
+  box-shadow: 0 0 0 2px white;
 }
 
 .overlay-circle,
@@ -89,6 +89,7 @@ body {
   position: relative;
   width: 600px;
   height: 600px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px;
 }
 
 .circle.five {
@@ -133,7 +134,7 @@ body {
 .overlay-segment {
   position: absolute;
   width: 50%;
-  height: 3px;
+  height: 2px;
   background-color: white;
   top: 50%;
   left: 50%;
