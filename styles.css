@@ -1,4 +1,5 @@
 * {
+  color: darkgray;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 24px;
@@ -26,12 +27,56 @@ body {
   box-shadow: 0 0 0 3px white;
 }
 
-.overlay-circle {
+.overlay-circle,
+.overlay-names {
   z-index: 100;
   position: absolute;
   width: 600px;
   height: 600px;
   pointer-events: none;
+}
+
+.name {
+  z-index: 102;
+  position: absolute;
+
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  background-color: #f7f6f6;
+}
+
+.name.rest-and-relax {
+  margin: 267px auto auto 487px;
+}
+
+.name.eat-well {
+  margin: 438px auto auto 412px;
+}
+
+.name.move-more {
+  margin: 526px auto auto 236px;
+}
+
+.name.lift-your-spirits {
+  margin: 424px auto auto 88px;
+}
+
+.name.connect {
+  margin: 281px auto auto 24px;
+}
+
+.name.practical-matters {
+  margin: 102px auto auto 88px;
+}
+
+.name.mind-and-emotions {
+  margin: 21px auto auto 248px;
+}
+
+.name.physical-comfort {
+  margin: 102px auto auto 414px;
 }
 
 .circle.base {
