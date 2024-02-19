@@ -10,7 +10,7 @@ function wordToInt(word) {
     six: 6,
     // Add more mappings as needed
   };
-  return wordMap[word] || NaN;
+  return wordMap[word];
 }
 
 // Get all circle divs with classes one to six
@@ -35,10 +35,12 @@ circles.forEach((circle) => {
       const circleNumber = wordToInt(circleNumberWord);
 
       // Update the value of the input element
-      const inputValue =
-        parseInt(document.querySelector(`#input--${segmentClass}`).value) || 0;
       document.querySelector(`#input--${segmentClass}`).value =
         parseInt(circleNumber);
+
+      document.querySelector(
+        `#wheel-section--${segmentClass} .number-container`,
+      ).innerHTML = `= ${circleNumber}`;
 
       // Loop through all circles to remove "selected" class from segments with the same class
       circles.forEach((otherCircle) => {
