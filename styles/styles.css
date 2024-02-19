@@ -51,35 +51,35 @@ body {
   background-color: #f7f6f6;
 }
 
-.name.rest-and-relax {
+#name--rest-and-relax {
   margin: 267px auto auto 487px;
 }
 
-.name.eat-well {
+#name--eat-well {
   margin: 438px auto auto 412px;
 }
 
-.name.move-more {
+#name--move-more {
   margin: 526px auto auto 236px;
 }
 
-.name.lift-your-spirits {
+#name--lift-your-spirits {
   margin: 424px auto auto 88px;
 }
 
-.name.connect {
+#name--connect {
   margin: 281px auto auto 24px;
 }
 
-.name.practical-matters {
+#name--practical-matters {
   margin: 102px auto auto 88px;
 }
 
-.name.mind-and-emotions {
+#name--mind-and-emotions {
   margin: 21px auto auto 248px;
 }
 
-.name.physical-comfort {
+#name--physical-comfort {
   margin: 102px auto auto 414px;
 }
 
