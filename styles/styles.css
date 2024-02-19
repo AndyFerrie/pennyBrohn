@@ -2,13 +2,17 @@
   color: #9c9a9a;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+}
+
+.circle-column {
+  position: sticky;
+  top: 0;
 }
 
 .circle-container {
@@ -39,7 +43,7 @@ body {
 .name {
   z-index: 102;
   position: absolute;
-
+  font-size: 24px;
   text-align: center;
   padding: 5px;
   border-radius: 5px;
@@ -222,7 +226,40 @@ body {
   background-color: #ffe1df;
 }
 
-.questions-container {
+.questions-column {
   color: black;
   width: 100%;
+  margin: 2rem;
+  overflow-y: scroll;
+}
+
+h2 {
+  font-size: 48px;
+  margin-left: 1rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.wheel-section {
+  margin-bottom: 2rem;
+}
+
+.wheel-section--header {
+  display: flex;
+  align-items: center;
+}
+
+.wheel-section--icon {
+  width: 96px;
+  height: 96px;
+}
+
+.wheel-section--text-input {
+  width: 90%;
+  height: 128px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  resize: vertical;
 }

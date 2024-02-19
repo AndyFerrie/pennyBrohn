@@ -4,103 +4,372 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wellness Wheel</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <div class="circle-container">
-      <div class="overlay-names">
-        <div class="name rest-and-relax">Rest &<br />Relax</div>
-        <div class="name eat-well">Eat Well</div>
-        <div class="name move-more">Move More</div>
-        <div class="name lift-your-spirits">Lift Your<br />Spirits</div>
-        <div class="name connect">Connect</div>
-        <div class="name practical-matters">Practical<br />Matters</div>
-        <div class="name mind-and-emotions">Mind &<br />Emotions</div>
-        <div class="name physical-comfort">Physical<br />Comfort</div>
-      </div>
-      <div class="overlay-circle">
-        <div class="overlay-segment"></div>
-        <div class="overlay-segment"></div>
-        <div class="overlay-segment"></div>
-        <div class="overlay-segment"></div>
-        <div class="overlay-segment"></div>
-        <div class="overlay-segment"></div>
-        <div class="overlay-segment"></div>
-        <div class="overlay-segment"></div>
-      </div>
-      <div class="circle base"></div>
-      <div title="6" class="circle six">
-        <div class="segment rest-and-relax"></div>
-        <div class="segment eat-well"></div>
-        <div class="segment move-more"></div>
-        <div class="segment lift-your-spirits"></div>
-        <div class="segment connect"></div>
-        <div class="segment practical-matters"></div>
-        <div class="segment mind-and-emotions"></div>
-        <div class="segment physical-comfort"></div>
-      </div>
-      <div title="5" class="circle five">
-        <div class="segment rest-and-relax"></div>
-        <div class="segment eat-well"></div>
-        <div class="segment move-more"></div>
-        <div class="segment lift-your-spirits"></div>
-        <div class="segment connect"></div>
-        <div class="segment practical-matters"></div>
-        <div class="segment mind-and-emotions"></div>
-        <div class="segment physical-comfort"></div>
-      </div>
-      <div title="4" class="circle four">
-        <div class="segment rest-and-relax"></div>
-        <div class="segment eat-well"></div>
-        <div class="segment move-more"></div>
-        <div class="segment lift-your-spirits"></div>
-        <div class="segment connect"></div>
-        <div class="segment practical-matters"></div>
-        <div class="segment mind-and-emotions"></div>
-        <div class="segment physical-comfort"></div>
-      </div>
-      <div title="3" class="circle three">
-        <div class="segment rest-and-relax"></div>
-        <div class="segment eat-well"></div>
-        <div class="segment move-more"></div>
-        <div class="segment lift-your-spirits"></div>
-        <div class="segment connect"></div>
-        <div class="segment practical-matters"></div>
-        <div class="segment mind-and-emotions"></div>
-        <div class="segment physical-comfort"></div>
-      </div>
-      <div title="2" class="circle two">
-        <div class="segment rest-and-relax"></div>
-        <div class="segment eat-well"></div>
-        <div class="segment move-more"></div>
-        <div class="segment lift-your-spirits"></div>
-        <div class="segment connect"></div>
-        <div class="segment practical-matters"></div>
-        <div class="segment mind-and-emotions"></div>
-        <div class="segment physical-comfort"></div>
-      </div>
-      <div title="1" class="circle one">
-        <div class="segment rest-and-relax"></div>
-        <div class="segment eat-well"></div>
-        <div class="segment move-more"></div>
-        <div class="segment lift-your-spirits"></div>
-        <div class="segment connect"></div>
-        <div class="segment practical-matters"></div>
-        <div class="segment mind-and-emotions"></div>
-        <div class="segment physical-comfort"></div>
-      </div>
-      <div title="0" class="circle zero">
-        <div class="segment rest-and-relax"></div>
-        <div class="segment eat-well"></div>
-        <div class="segment move-more"></div>
-        <div class="segment lift-your-spirits"></div>
-        <div class="segment connect"></div>
-        <div class="segment practical-matters"></div>
-        <div class="segment mind-and-emotions"></div>
-        <div class="segment physical-comfort"></div>
+    <div class="circle-column">
+      <div class="circle-container">
+        <div class="overlay-names">
+          <div class="name rest-and-relax">Rest &<br />Relax</div>
+          <div class="name eat-well">Eat Well</div>
+          <div class="name move-more">Move More</div>
+          <div class="name lift-your-spirits">Lift Your<br />Spirits</div>
+          <div class="name connect">Connect</div>
+          <div class="name practical-matters">Practical<br />Matters</div>
+          <div class="name mind-and-emotions">Mind &<br />Emotions</div>
+          <div class="name physical-comfort">Physical<br />Comfort</div>
+        </div>
+        <div class="overlay-circle">
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+        </div>
+        <div class="circle base"></div>
+        <div title="6" class="circle six">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="5" class="circle five">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="4" class="circle four">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="3" class="circle three">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="2" class="circle two">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="1" class="circle one">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="0" class="circle zero">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
       </div>
     </div>
-    <div class="questions-container"></div>
+    <div class="questions-column">
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe3Rizsr2ZITQ6Y7DWpxN2iMArqTuRjVGrIwG1YxjnGjiNYig/formResponse"
+        method="POST"
+      >
+        <div class="wheel-section">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="./assets/images/restAndRelax.jpg"
+              alt=""
+            />
+            <h2>Rest & Relax</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Setting value to 0 serves as a placeholder. This will be type=hidden once linked to js -->
+          <input
+            type="number"
+            min="0"
+            max="6"
+            value="0"
+            name="entry.266663822"
+          />
+          <input
+            class="wheel-section--text-input"
+            type="textarea"
+            cols="50"
+            rows="4"
+            maxlength="3750"
+            placeholder="Please enter your thoughts and feelings"
+          />
+        </div>
+        <div class="wheel-section">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="./assets/images/restAndRelax.jpg"
+              alt=""
+            />
+            <h2>Rest & Relax</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Setting value to 0 serves as a placeholder. This will be type=hidden once linked to js -->
+          <input
+            type="number"
+            min="0"
+            max="6"
+            value="0"
+            name="entry.266663822"
+          />
+          <input
+            class="wheel-section--text-input"
+            type="textarea"
+            cols="30"
+            rows="2"
+            maxlength="3750"
+            placeholder="Please enter your thoughts and feelings"
+          />
+        </div>
+        <div class="wheel-section">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="./assets/images/restAndRelax.jpg"
+              alt=""
+            />
+            <h2>Rest & Relax</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Setting value to 0 serves as a placeholder. This will be type=hidden once linked to js -->
+          <input
+            type="number"
+            min="0"
+            max="6"
+            value="0"
+            name="entry.266663822"
+          />
+          <input
+            class="wheel-section--text-input"
+            type="textarea"
+            cols="30"
+            rows="2"
+            maxlength="3750"
+            placeholder="Please enter your thoughts and feelings"
+          />
+        </div>
+        <div class="wheel-section">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="./assets/images/restAndRelax.jpg"
+              alt=""
+            />
+            <h2>Rest & Relax</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Setting value to 0 serves as a placeholder. This will be type=hidden once linked to js -->
+          <input
+            type="number"
+            min="0"
+            max="6"
+            value="0"
+            name="entry.266663822"
+          />
+          <input
+            class="wheel-section--text-input"
+            type="textarea"
+            cols="30"
+            rows="2"
+            maxlength="3750"
+            placeholder="Please enter your thoughts and feelings"
+          />
+        </div>
+        <div class="wheel-section">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="./assets/images/restAndRelax.jpg"
+              alt=""
+            />
+            <h2>Rest & Relax</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Setting value to 0 serves as a placeholder. This will be type=hidden once linked to js -->
+          <input
+            type="number"
+            min="0"
+            max="6"
+            value="0"
+            name="entry.266663822"
+          />
+          <input
+            class="wheel-section--text-input"
+            type="textarea"
+            cols="30"
+            rows="2"
+            maxlength="3750"
+            placeholder="Please enter your thoughts and feelings"
+          />
+        </div>
+        <div class="wheel-section">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="./assets/images/restAndRelax.jpg"
+              alt=""
+            />
+            <h2>Rest & Relax</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Setting value to 0 serves as a placeholder. This will be type=hidden once linked to js -->
+          <input
+            type="number"
+            min="0"
+            max="6"
+            value="0"
+            name="entry.266663822"
+          />
+          <input
+            class="wheel-section--text-input"
+            type="textarea"
+            cols="30"
+            rows="2"
+            maxlength="3750"
+            placeholder="Please enter your thoughts and feelings"
+          />
+        </div>
+        <div class="wheel-section">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="./assets/images/restAndRelax.jpg"
+              alt=""
+            />
+            <h2>Rest & Relax</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Setting value to 0 serves as a placeholder. This will be type=hidden once linked to js -->
+          <input
+            type="number"
+            min="0"
+            max="6"
+            value="0"
+            name="entry.266663822"
+          />
+          <input
+            class="wheel-section--text-input"
+            type="textarea"
+            cols="30"
+            rows="2"
+            maxlength="3750"
+            placeholder="Please enter your thoughts and feelings"
+          />
+        </div>
+        <div class="wheel-section">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="./assets/images/restAndRelax.jpg"
+              alt=""
+            />
+            <h2>Rest & Relax</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Setting value to 0 serves as a placeholder. This will be type=hidden once linked to js -->
+          <input
+            type="number"
+            min="0"
+            max="6"
+            value="0"
+            name="entry.266663822"
+          />
+          <input
+            class="wheel-section--text-input"
+            type="textarea"
+            cols="30"
+            rows="2"
+            maxlength="3750"
+            placeholder="Please enter your thoughts and feelings"
+          />
+        </div>
+        <div>
+          <label for="email">Email address</label>
+          <input type="email" name="emailAddress" />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
