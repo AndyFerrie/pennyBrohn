@@ -1,4 +1,19 @@
-// Get all circle divs
+// Function to convert number words to integers
+function wordToInt(word) {
+  const wordMap = {
+    zero: 0,
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
+    // Add more mappings as needed
+  };
+  return wordMap[word] || NaN;
+}
+
+// Get all circle divs with classes one to six
 const circles = document.querySelectorAll(
   ".circle.zero, .circle.one, .circle.two, .circle.three, .circle.four, .circle.five, .circle.six",
 );
@@ -14,6 +29,16 @@ circles.forEach((circle) => {
     if (clickedSegment) {
       // Get the class of the clicked segment
       const segmentClass = clickedSegment.classList[1];
+
+      // Get the circle number
+      const circleNumberWord = circle.classList[1];
+      const circleNumber = wordToInt(circleNumberWord);
+
+      // Update the value of the input element
+      const inputValue =
+        parseInt(document.querySelector(`#input--${segmentClass}`).value) || 0;
+      document.querySelector(`#input--${segmentClass}`).value =
+        parseInt(circleNumber);
 
       // Loop through all circles to remove "selected" class from segments with the same class
       circles.forEach((otherCircle) => {
