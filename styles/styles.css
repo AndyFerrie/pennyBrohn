@@ -15,6 +15,7 @@ body {
   top: 0;
   display: flex;
   align-items: center;
+  margin-left: 2rem;
 }
 
 .circle-container {
@@ -255,8 +256,8 @@ body {
 .questions-column {
   color: black;
   width: 100%;
-  margin: 2rem;
   overflow-y: scroll;
+  padding: 2rem 4rem 0;
 }
 
 iframe {
@@ -273,7 +274,7 @@ p {
 }
 
 .wheel-section {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   margin-right: 2rem;
 }
 
@@ -293,10 +294,23 @@ p {
 }
 
 .wheel-section--text-input {
+  border-radius: 10px;
   width: 100%;
   height: 128px;
   margin-top: 1rem;
   margin-right: 1rem;
+}
+
+textarea {
+  border-style: solid 1px darkgrey;
+  border-color: darkgray;
+  padding: 1rem;
+}
+
+textarea:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
 }
 
 *[id^="input--"] {
