@@ -233,6 +233,10 @@ body {
   overflow-y: scroll;
 }
 
+iframe {
+  display: none;
+}
+
 h2 {
   font-size: 48px;
   margin-left: 1rem;
