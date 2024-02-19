@@ -29,3 +29,16 @@ circles.forEach((circle) => {
     }
   });
 });
+
+const wheelSectionMindAndEmotions = document.getElementById(
+  "wheel-section--mind-and-emotions",
+);
+const nameMindAndEmotions = document.getElementById("name--mind-and-emotions");
+
+wheelSectionMindAndEmotions.addEventListener("mouseover", (event) => {
+  nameMindAndEmotions.classList.add("glow");
+});
+
+wheelSectionMindAndEmotions.addEventListener("mouseout", (event) => {
+  nameMindAndEmotions.classList.remove("glow");
+});

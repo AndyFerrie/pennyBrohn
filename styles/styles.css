@@ -220,6 +220,9 @@ body {
 .segment.mind-and-emotions.selected {
   background-color: #ff8b00;
 }
+#name--mind-and-emotions.name.glow {
+  box-shadow: #ff8b00 0px 0px 0px 4px;
+}
 /* Feel Better Pink (#FFE1DF)*/
 .segment.physical-comfort:hover,
 .segment.physical-comfort.selected {
