@@ -30,15 +30,17 @@ circles.forEach((circle) => {
   });
 });
 
-const wheelSectionMindAndEmotions = document.getElementById(
-  "wheel-section--mind-and-emotions",
-);
-const nameMindAndEmotions = document.getElementById("name--mind-and-emotions");
+// querySelectorAll selects all elements whose ID starts with "wheel-section--"
+const wheelSections = document.querySelectorAll("[id^='wheel-section--']");
 
-wheelSectionMindAndEmotions.addEventListener("mouseover", (event) => {
-  nameMindAndEmotions.classList.add("glow");
-});
+wheelSections.forEach((section) => {
+  const sectionId = section.id.replace("wheel-section--", ""); // Extract the section's name from its ID
+  const name = document.getElementById(`name--${sectionId}`); // Dynamically get the corresponding name element
 
-wheelSectionMindAndEmotions.addEventListener("mouseout", (event) => {
-  nameMindAndEmotions.classList.remove("glow");
+  section.addEventListener("mouseover", (event) => {
+    name.classList.add("glow");
+  });
+  section.addEventListener("mouseout", (event) => {
+    name.classList.remove("glow");
+  });
 });

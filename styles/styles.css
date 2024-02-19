@@ -190,30 +190,48 @@ body {
 .segment.rest-and-relax.selected {
   background-color: #cac7f2;
 }
+#name--rest-and-relax.name.glow {
+  box-shadow: #cac7f2 0px 0px 0px 4px;
+}
 /* Eat Well/Practical Matters Blue (#64DCD2)*/
 .segment.eat-well:hover,
 .segment.eat-well.selected {
   background-color: #64dcd2;
+}
+#name--eat-well.name.glow {
+  box-shadow: #64dcd2 0px 0px 0px 4px;
 }
 /* Move More Blue (#D2F0F0)*/
 .segment.move-more:hover,
 .segment.move-more.selected {
   background-color: #d2f0f0;
 }
+#name--move-more.name.glow {
+  box-shadow: #d2f0f0 0px 0px 0px 4px;
+}
 /* Lift Your Spirits Yellow (#FFDC50)*/
 .segment.lift-your-spirits:hover,
 .segment.lift-your-spirits.selected {
   background-color: #ffdc50;
+}
+#name--lift-your-spirits.name.glow {
+  box-shadow: #ffdc50 0px 0px 0px 4px;
 }
 /* Rest & Relax/Connect Purple (#CAC7F2)*/
 .segment.connect:hover,
 .segment.connect.selected {
   background-color: #cac7f2;
 }
+#name--connect.name.glow {
+  box-shadow: #cac7f2 0px 0px 0px 4px;
+}
 /* Eat Well/Practical Matters Blue (#64DCD2)*/
 .segment.practical-matters:hover,
 .segment.practical-matters.selected {
   background-color: #64dcd2;
+}
+#name--practical-matters.name.glow {
+  box-shadow: #64dcd2 0px 0px 0px 4px;
 }
 /* Mind Matters Orange (#FF8B00)*/
 .segment.mind-and-emotions:hover,
@@ -227,6 +245,9 @@ body {
 .segment.physical-comfort:hover,
 .segment.physical-comfort.selected {
   background-color: #ffe1df;
+}
+#name--physical-comfort.name.glow {
+  box-shadow: #ffe1df 0px 0px 0px 4px;
 }
 
 .questions-column {
