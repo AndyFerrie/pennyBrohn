@@ -298,3 +298,7 @@ p {
   margin-top: 1rem;
   margin-right: 1rem;
 }
+
+*[id^="input--"] {
+  display: none;
+}
