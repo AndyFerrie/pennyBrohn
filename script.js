@@ -97,18 +97,29 @@ function validateSelection() {
   return true;
 }
 
+// Function to change the submit button text to indicate form submission
+function setSubmissionStatus(text) {
+  document.getElementById("submission-status").innerHTML = text;
+}
+
 // Function to handle form submission
 function handleSubmit(event) {
   // Prevent the default form submission
   event.preventDefault();
+
+  // Change the submit button text to indicate form submission
+  setSubmissionStatus("Submitting...");
+
   // Check if at least one segment from each category has been selected
   if (validateSelection()) {
     // If all categories have been selected, submit the form
     event.target.submit();
+    // Change the submit button text to indicate form submission
+    setSubmissionStatus("Form Submitted");
   } else {
     // If any category is missing a selected segment, display an error message
-    alert(
-      "Please select at least one segment from each category before submitting the form.",
+    setSubmissionStatus(
+      "Unable to submit! Please make sure you choose a number between 0 - 6 for each section before submitting.",
     );
   }
 }
