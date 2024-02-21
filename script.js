@@ -71,3 +71,28 @@ wheelSections.forEach((section) => {
     name.classList.remove("glow");
   });
 });
+
+// Function to check if at least one segment from each category has been selected
+function validateSelection() {
+  const categories = [
+    "rest-and-relax",
+    "eat-well",
+    "move-more",
+    "lift-your-spirits",
+    "connect",
+    "practical-matters",
+    "mind-and-emotions",
+    "physical-comfort",
+  ];
+
+  // Check if at least one segment from each category has been selected
+  for (const category of categories) {
+    const selectedSegment = document.querySelector(
+      `.segment.${category}.selected`,
+    );
+    if (!selectedSegment) {
+      return false;
+    }
+  }
+  return true;
+}
