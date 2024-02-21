@@ -327,6 +327,8 @@ textarea:focus {
 
 button {
   margin: 1rem 0;
+  font-size: 20px;
+  padding: 5px;
 }
 
 *[id^="input--"] {
