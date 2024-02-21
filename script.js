@@ -96,3 +96,22 @@ function validateSelection() {
   }
   return true;
 }
+
+// Function to handle form submission
+function handleSubmit(event) {
+  // Prevent the default form submission
+  event.preventDefault();
+  // Check if at least one segment from each category has been selected
+  if (validateSelection()) {
+    // If all categories have been selected, submit the form
+    event.target.submit();
+  } else {
+    // If any category is missing a selected segment, display an error message
+    alert(
+      "Please select at least one segment from each category before submitting the form.",
+    );
+  }
+}
+
+// Add event listener to the form for submission
+document.querySelector("form").addEventListener("submit", handleSubmit);
