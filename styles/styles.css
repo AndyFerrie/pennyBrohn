@@ -220,21 +220,21 @@ body {
 #name--lift-your-spirits.name.glow {
   box-shadow: #ffdc50 0px 0px 5px 3px;
 }
-/* Rest & Relax/Connect Purple (#CAC7F2)*/
+/* Connect Blue (#8EA0C8)*/
 .segment.connect:hover,
 .segment.connect.selected {
-  background-color: #cac7f2;
+  background-color: #8ea0c8;
 }
 #name--connect.name.glow {
-  box-shadow: #cac7f2 0px 0px 5px 3px;
+  box-shadow: #8ea0c8 0px 0px 5px 3px;
 }
-/* Eat Well/Practical Matters Blue (#64DCD2)*/
+/* Practical Matters Green (#D7FAAF)*/
 .segment.practical-matters:hover,
 .segment.practical-matters.selected {
-  background-color: #64dcd2;
+  background-color: #d7faaf;
 }
 #name--practical-matters.name.glow {
-  box-shadow: #64dcd2 0px 0px 5px 3px;
+  box-shadow: #d7faaf 0px 0px 5px 3px;
 }
 /* Mind Matters Orange (#FF8B00)*/
 .segment.mind-and-emotions:hover,
