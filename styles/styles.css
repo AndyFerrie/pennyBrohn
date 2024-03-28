@@ -298,13 +298,7 @@ p {
   margin-left: 1rem;
 }
 
-.wheel-section--text-input {
-  width: 100%;
-  height: 128px;
-}
-
-input,
-textarea {
+input {
   margin-top: 1rem;
   border-radius: 10px;
   border-style: none;
@@ -313,8 +307,7 @@ textarea {
   box-sizing: border-box;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
   outline: none !important;
   border-color: #719ece;
   box-shadow: 0 0 10px #719ece;
