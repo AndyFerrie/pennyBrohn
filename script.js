@@ -8,26 +8,19 @@ function wordToInt(word) {
     four: 4,
     five: 5,
     six: 6,
-    // Add more mappings as needed
   };
   return wordMap[word];
 }
 
-// Get all circle divs with classes one to six
 const circles = document.querySelectorAll(
   ".circle.zero, .circle.one, .circle.two, .circle.three, .circle.four, .circle.five, .circle.six",
 );
 
-// Loop through each circle div
 circles.forEach((circle) => {
-  // Add click event listener
   circle.addEventListener("click", function (event) {
-    // Get the specific segment that was clicked
     const clickedSegment = event.target.closest(".segment");
 
-    // Check if a segment was clicked
     if (clickedSegment) {
-      // Get the class of the clicked segment
       const segmentClass = clickedSegment.classList[1];
 
       // Get the circle number
@@ -51,7 +44,6 @@ circles.forEach((circle) => {
           });
       });
 
-      // Toggle "selected" class on the clicked segment
       clickedSegment.classList.toggle("selected");
     }
   });
@@ -72,7 +64,6 @@ wheelSections.forEach((section) => {
   });
 });
 
-// Function to check if at least one segment from each category has been selected
 function validateSelection() {
   const categories = [
     "rest-and-relax",
@@ -104,7 +95,6 @@ function setSubmissionStatus(text) {
 
 // Function to handle form submission
 function handleSubmit(event) {
-  // Prevent the default form submission
   event.preventDefault();
 
   // Change the submit button text to indicate form submission
