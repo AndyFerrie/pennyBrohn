@@ -1,0 +1,789 @@
+<style>
+    * {
+  color: #8c8a8a;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.body-container {
+  display: flex;
+  height: 100vh;
+}
+
+.circle-column {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 650px;
+  height: 650px;
+}
+
+.circle {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px white;
+}
+
+.overlay-circle,
+.overlay-names {
+  z-index: 100;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  pointer-events: none;
+}
+
+.name {
+  z-index: 102;
+  position: absolute;
+  font-size: 24px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  background-color: #f7f6f6;
+}
+
+#name--rest-and-relax {
+  margin: 267px auto auto 487px;
+}
+
+#name--eat-well {
+  margin: 438px auto auto 412px;
+}
+
+#name--move-more {
+  margin: 526px auto auto 236px;
+}
+
+#name--lift-your-spirits {
+  margin: 424px auto auto 88px;
+}
+
+#name--connect {
+  margin: 281px auto auto 24px;
+}
+
+#name--practical-matters {
+  margin: 102px auto auto 88px;
+}
+
+#name--mind-and-emotions {
+  margin: 21px auto auto 248px;
+}
+
+#name--physical-comfort {
+  margin: 102px auto auto 414px;
+}
+
+.circle.base {
+  width: 600px;
+  height: 600px;
+  background-color: #f7f6f6;
+}
+
+.circle.six {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  box-shadow: 0 0 6px #9d9d9d;
+}
+
+.circle.five {
+  width: 500px;
+  height: 500px;
+}
+
+.circle.four {
+  width: 405px;
+  height: 405px;
+}
+
+.circle.three {
+  width: 315px;
+  height: 315px;
+}
+
+.circle.two {
+  width: 230px;
+  height: 230px;
+}
+
+.circle.one {
+  width: 150px;
+  height: 150px;
+}
+
+.circle.zero {
+  width: 75px;
+  height: 75px;
+}
+
+.segment {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 50%, 100% 0, 100% 50%);
+  transform-origin: 50% 50%;
+}
+
+.overlay-segment {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+}
+
+.overlay-segment:nth-child(1),
+.segment.rest-and-relax {
+  transform: rotate(22.5deg);
+}
+
+.overlay-segment:nth-child(2),
+.segment.eat-well {
+  transform: rotate(67.5deg);
+}
+
+.overlay-segment:nth-child(3),
+.segment.move-more {
+  transform: rotate(112.5deg);
+}
+
+.overlay-segment:nth-child(4),
+.segment.lift-your-spirits {
+  transform: rotate(157.5deg);
+}
+
+.overlay-segment:nth-child(5),
+.segment.connect {
+  transform: rotate(202.5deg);
+}
+
+.overlay-segment:nth-child(6),
+.segment.practical-matters {
+  transform: rotate(247.5deg);
+}
+
+.overlay-segment:nth-child(7),
+.segment.mind-and-emotions {
+  transform: rotate(292.5deg);
+}
+
+.overlay-segment:nth-child(8),
+.segment.physical-comfort {
+  transform: rotate(337.5deg);
+}
+
+/* Rest & Relax/Connect Purple (#CAC7F2)*/
+.segment.rest-and-relax:hover,
+.segment.rest-and-relax.selected {
+  background-color: #cac7f2;
+}
+#name--rest-and-relax.name.glow {
+  box-shadow: #cac7f2 0px 0px 5px 3px;
+}
+/* Eat Well/Practical Matters Blue (#64DCD2)*/
+.segment.eat-well:hover,
+.segment.eat-well.selected {
+  background-color: #64dcd2;
+}
+#name--eat-well.name.glow {
+  box-shadow: #64dcd2 0px 0px 5px 3px;
+}
+/* Move More Blue (#D2F0F0)*/
+.segment.move-more:hover,
+.segment.move-more.selected {
+  background-color: #d2f0f0;
+}
+#name--move-more.name.glow {
+  box-shadow: #d2f0f0 0px 0px 5px 3px;
+}
+/* Lift Your Spirits Yellow (#FFDC50)*/
+.segment.lift-your-spirits:hover,
+.segment.lift-your-spirits.selected {
+  background-color: #ffdc50;
+}
+#name--lift-your-spirits.name.glow {
+  box-shadow: #ffdc50 0px 0px 5px 3px;
+}
+/* Connect Blue (#8EA0C8)*/
+.segment.connect:hover,
+.segment.connect.selected {
+  background-color: #8ea0c8;
+}
+#name--connect.name.glow {
+  box-shadow: #8ea0c8 0px 0px 5px 3px;
+}
+/* Practical Matters Green (#D7FAAF)*/
+.segment.practical-matters:hover,
+.segment.practical-matters.selected {
+  background-color: #d7faaf;
+}
+#name--practical-matters.name.glow {
+  box-shadow: #d7faaf 0px 0px 5px 3px;
+}
+/* Mind Matters Orange (#FF8B00)*/
+.segment.mind-and-emotions:hover,
+.segment.mind-and-emotions.selected {
+  background-color: #ff8b00;
+}
+#name--mind-and-emotions.name.glow {
+  box-shadow: #ff8b00 0px 0px 5px 3px;
+}
+/* Feel Better Pink (#FFE1DF)*/
+.segment.physical-comfort:hover,
+.segment.physical-comfort.selected {
+  background-color: #ffe1df;
+}
+#name--physical-comfort.name.glow {
+  box-shadow: #ffe1df 0px 0px 5px 3px;
+}
+
+.questions-column {
+  color: black;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 2rem 4rem 0;
+}
+
+iframe {
+  display: none;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 36px;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 1.4;
+}
+
+.wheel-section {
+  margin-bottom: 4rem;
+}
+
+.wheel-section--header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wheel-section--icon {
+  width: 96px;
+  height: 96px;
+}
+
+.number-container {
+  color: var( --e-global-color-text );
+  font-family: var( --e-global-typography-primary-font-family ), Sans-serif;
+  font-weight: var( --e-global-typography-primary-font-weight );
+  font-size: 36px;
+  margin-left: 1rem;
+}
+
+input {
+  margin-top: 1rem;
+  border-radius: 10px;
+  border-style: none;
+  padding: 1rem;
+  box-shadow: 0 0 6px #9d9d9d;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+
+#email-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+button {
+  margin: 1rem 0;
+  font-size: 20px;
+  padding: 5px;
+}
+
+*[id^="input--"] {
+  display: none;
+}
+
+#submission-status {
+  margin-top: 1rem;
+}
+
+</style>
+<div class="body-container">
+<div class="circle-column">
+      <div class="circle-container">
+        <div class="overlay-names">
+          <div class="name" id="name--rest-and-relax">Rest &<br />Relax</div>
+          <div class="name" id="name--eat-well">Eat Well</div>
+          <div class="name" id="name--move-more">Move More</div>
+          <div class="name" id="name--lift-your-spirits">
+            Lift Your<br />Spirits
+          </div>
+          <div class="name" id="name--connect">Connect</div>
+          <div class="name" id="name--practical-matters">
+            Practical<br />Matters
+          </div>
+          <div class="name" id="name--mind-and-emotions">
+            Mind &<br />Emotions
+          </div>
+          <div class="name" id="name--physical-comfort">Feel<br />Better</div>
+        </div>
+        <div class="overlay-circle">
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+          <div class="overlay-segment"></div>
+        </div>
+        <div class="circle base"></div>
+        <div title="6" class="circle six">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="5" class="circle five">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="4" class="circle four">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="3" class="circle three">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="2" class="circle two">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="1" class="circle one">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+        <div title="0" class="circle zero">
+          <div class="segment rest-and-relax"></div>
+          <div class="segment eat-well"></div>
+          <div class="segment move-more"></div>
+          <div class="segment lift-your-spirits"></div>
+          <div class="segment connect"></div>
+          <div class="segment practical-matters"></div>
+          <div class="segment mind-and-emotions"></div>
+          <div class="segment physical-comfort"></div>
+        </div>
+      </div>
+    </div>
+    <div class="questions-column">
+      <div class="wheel-section">
+        <h1>The Health & Wellbeing Wheel</h1>
+        <p>
+          Using the Health & Wellbeing Wheel is a great way to track how you
+          currently feel. It can help you recognise what supports your energy
+          and health and what drains it.
+          <br /><br />
+          Perhaps you&apos;ve always taken very good care of your body with
+          regular exercise, but have paid less attention to your emotional
+          health? Perhaps you&apos;ve never really thought about your spiritual
+          health before?
+          <br /><br />
+          You can use this tool to help you get more support in the areas of
+          your life that need it and to develop resilience. Once completed, we
+          can signpost you to the services that Penny Brohn offers that may be
+          helpful for you.
+          <br /><br />
+          As you scroll down and read the descriptions of the different areas,
+          take a moment to reflect on how you currently feel and click the wheel
+          on the left to choose a score between 6 = “as good as it could be” and
+          0 = “as bad as it could be”.
+        </p>
+      </div>
+
+      <iframe name="hiddenConfirm" id="hiddenConfirm" class="hidden"></iframe>
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe3Rizsr2ZITQ6Y7DWpxN2iMArqTuRjVGrIwG1YxjnGjiNYig/formResponse"
+        method="POST"
+        target="hiddenConfirm"
+        id="form"
+      >
+        <div class="wheel-section" id="wheel-section--mind-and-emotions">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="https://pennybrohn.org.uk/wp-content/uploads/2023/07/Your-mind-matters.png"
+              alt=""
+            />
+            <h2>Mind & Emotions</h2>
+            <div class="number-container"></div>
+          </div>
+          <p>
+            It’s normal to experience a whole range of difficult emotions with
+            cancer but you are not alone. We can help you find ways to cope and
+            feel more yourself again. ​
+          </p>
+          <input
+            id="input--mind-and-emotions"
+            type="number"
+            name="entry.534978091"
+            autocomplete="off"
+          />
+        </div>
+        <div class="wheel-section" id="wheel-section--physical-comfort">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="https://pennybrohn.org.uk/wp-content/uploads/2023/07/Feel-better.png"
+              alt=""
+            />
+            <h2>Feel Better</h2>
+            <div class="number-container"></div>
+          </div>
+          <p>
+            The side effects of cancer and treatment can be hard to manage. Our
+            expert team can provide the personalised support you need.​
+          </p>
+          <input
+            id="input--physical-comfort"
+            type="number"
+            name="entry.953612180"
+            autocomplete="off"
+          />
+        </div>
+        <div class="wheel-section" id="wheel-section--rest-and-relax">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="https://pennybrohn.org.uk/wp-content/uploads/2023/07/Rest-and-relax-1.png"
+              alt=""
+            />
+            <h2>Rest & Relax</h2>
+            <div class="number-container"></div>
+          </div>
+          <p>
+            Restorative sleep and relaxation are so nourishing but can be hard
+            to achieve. We can help you rest your body and mind.​
+          </p>
+          <input
+            id="input--rest-and-relax"
+            type="number"
+            name="entry.266663822"
+            autocomplete="off"
+          />
+        </div>
+        <div class="wheel-section" id="wheel-section--eat-well">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="https://pennybrohn.org.uk/wp-content/uploads/2023/07/Eat-well.png"
+              alt=""
+            />
+            <h2>Eat Well</h2>
+            <div class="number-container"></div>
+          </div>
+          <p>
+            Our positive approach and support can help you enjoy the foods and
+            ways of eating that are supportive with cancer.​
+          </p>
+          <input
+            id="input--eat-well"
+            type="number"
+            name="entry.2107423106"
+            autocomplete="off"
+          />
+        </div>
+        <div class="wheel-section" id="wheel-section--move-more">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="https://pennybrohn.org.uk/wp-content/uploads/2023/07/Move-more.png"
+              alt=""
+            />
+            <h2>Move More</h2>
+            <div class="number-container"></div>
+          </div>
+          <p>
+            Movement is medicine! Our exercise specialists can help you find
+            ways to move your body that are safe and enjoyable whatever your
+            situation. ​
+          </p>
+          <input
+            id="input--move-more"
+            type="number"
+            name="entry.1267682022"
+            autocomplete="off"
+          />
+        </div>
+        <div class="wheel-section" id="wheel-section--lift-your-spirits">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="https://pennybrohn.org.uk/wp-content/uploads/2023/07/Find-the-joy.png"
+              alt=""
+            />
+            <h2>Lift Your Spirits</h2>
+            <div class="number-container"></div>
+          </div>
+          <p>
+            We can offer uplifting ideas to help lift your spirits and help you
+            feel more like yourself, especially at difficult times. ​
+          </p>
+          <input
+            id="input--lift-your-spirits"
+            type="number"
+            name="entry.956040732"
+            autocomplete="off"
+          />
+        </div>
+        <div class="wheel-section" id="wheel-section--connect">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="https://pennybrohn.org.uk/wp-content/uploads/2024/04/connect.png"
+              alt=""
+            />
+            <h2>Connect</h2>
+            <div class="number-container"></div>
+          </div>
+          <p>
+            Connecting with others can make cancer a less lonely experience. We
+            bring people together to share and support each other​.
+          </p>
+          <input
+            id="input--connect"
+            type="number"
+            name="entry.377755946"
+            autocomplete="off"
+          />
+        </div>
+        <div class="wheel-section" id="wheel-section--practical-matters">
+          <div class="wheel-section--header">
+            <img
+              class="wheel-section--icon"
+              src="https://pennybrohn.org.uk/wp-content/uploads/2024/04/practicalMatters.png"
+              alt=""
+            />
+            <h2>Practical Matters</h2>
+            <div class="number-container"></div>
+          </div>
+          <p>
+            Home, work and financial challenges can get in the way of looking
+            after your wellbeing. We can help you find the practical support you
+            need​.
+          </p>
+          <input
+            id="input--practical-matters"
+            type="number"
+            name="entry.947782152"
+            autocomplete="off"
+          />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div id="email-container">
+          <label for="email">Email address:</label>
+          <input
+            type="email"
+            name="entry.641007839"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div id="submission-status"></div>
+        <button type="submit">Submit</button>
+      </form>
+</div>
+</div>
+
+<script>
+// Function to convert number words to integers
+function wordToInt(word) {
+  const wordMap = {
+    zero: 0,
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
+  };
+  return wordMap[word];
+}
+
+const circles = document.querySelectorAll(
+  ".circle.zero, .circle.one, .circle.two, .circle.three, .circle.four, .circle.five, .circle.six",
+);
+
+circles.forEach((circle) => {
+  circle.addEventListener("click", function (event) {
+    const clickedSegment = event.target.closest(".segment");
+
+    if (clickedSegment) {
+      const segmentClass = clickedSegment.classList[1];
+
+      // Get the circle number
+      const circleNumberWord = circle.classList[1];
+      const circleNumber = wordToInt(circleNumberWord);
+
+      // Update the value of the input element
+      document.querySelector(`#input--${segmentClass}`).value =
+        parseInt(circleNumber);
+
+      document.querySelector(
+        `#wheel-section--${segmentClass} .number-container`,
+      ).innerHTML = `${circleNumber}`;
+
+      // Loop through all circles to remove "selected" class from segments with the same class
+      circles.forEach((otherCircle) => {
+        otherCircle
+          .querySelectorAll(`.segment.${segmentClass}`)
+          .forEach((segment) => {
+            segment.classList.remove("selected");
+          });
+      });
+
+      clickedSegment.classList.toggle("selected");
+    }
+  });
+});
+
+// querySelectorAll selects all elements whose ID starts with "wheel-section--"
+const wheelSections = document.querySelectorAll("[id^='wheel-section--']");
+
+wheelSections.forEach((section) => {
+  const sectionId = section.id.replace("wheel-section--", ""); // Extract the section's name from its ID
+  const name = document.getElementById(`name--${sectionId}`); // Dynamically get the corresponding name element
+
+  section.addEventListener("mouseover", (event) => {
+    name.classList.add("glow");
+  });
+  section.addEventListener("mouseout", (event) => {
+    name.classList.remove("glow");
+  });
+});
+
+function validateSelection() {
+  const categories = [
+    "rest-and-relax",
+    "eat-well",
+    "move-more",
+    "lift-your-spirits",
+    "connect",
+    "practical-matters",
+    "mind-and-emotions",
+    "physical-comfort",
+  ];
+
+  // Check if at least one segment from each category has been selected
+  for (const category of categories) {
+    const selectedSegment = document.querySelector(
+      `.segment.${category}.selected`,
+    );
+    if (!selectedSegment) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// Function to change the submit button text to indicate form submission
+function setSubmissionStatus(text) {
+  document.getElementById("submission-status").innerHTML = text;
+}
+
+// Function to handle form submission
+function handleSubmit(event) {
+  event.preventDefault();
+
+  // Change the submit button text to indicate form submission
+  setSubmissionStatus("Submitting...");
+
+  // Check if at least one segment from each category has been selected
+  if (validateSelection()) {
+    // If all categories have been selected, submit the form
+    event.target.submit();
+    // Change the submit button text to indicate form submission
+    setSubmissionStatus("Form Submitted");
+  } else {
+    // If any category is missing a selected segment, display an error message
+    setSubmissionStatus(
+      "Unable to submit! Please make sure you choose a number between 0 - 6 for each section before submitting.",
+    );
+  }
+}
+
+// Add event listener to the form for submission
+document.querySelector("form").addEventListener("submit", handleSubmit);
+
+</script>
