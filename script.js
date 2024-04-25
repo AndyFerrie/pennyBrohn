@@ -1,3 +1,13 @@
+// Get all radio buttons
+const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+// Reset radio buttons on page load
+document.addEventListener("DOMContentLoaded", function () {
+  radioButtons.forEach(function (radioButton) {
+    radioButton.checked = false;
+  });
+});
+
 // Function to convert number words to integers
 function wordToInt(word) {
   const wordMap = {
@@ -84,9 +94,6 @@ wheelSections.forEach((section) => {
 });
 
 // Selects segment on wheel when radio button clicked
-
-// Get all radio buttons
-const radioButtons = document.querySelectorAll('input[type="radio"]');
 
 // Add event listener to each radio button
 radioButtons.forEach((radioButton) => {
