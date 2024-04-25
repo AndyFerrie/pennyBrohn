@@ -12,6 +12,20 @@ function wordToInt(word) {
   return wordMap[word];
 }
 
+// Function to convert numbers to words
+function numberToWord(number) {
+  const numberMap = {
+    0: "zero",
+    1: "one",
+    2: "two",
+    3: "three",
+    4: "four",
+    5: "five",
+    6: "six",
+  };
+  return numberMap[number];
+}
+
 const circles = document.querySelectorAll(
   ".circle.zero, .circle.one, .circle.two, .circle.three, .circle.four, .circle.five, .circle.six",
 );
@@ -30,6 +44,19 @@ circles.forEach((circle) => {
       // Update the value of the input element
       document.querySelector(`#input--${segmentClass}`).value =
         parseInt(circleNumber);
+
+      // Constructing the selector for the radio button based on segmentClass
+      const selector = `#input--${segmentClass} input[type="radio"][value="${parseInt(circleNumber)}"]`;
+
+      // Selecting the radio button and setting its checked property to true
+      const radioButton = document.querySelector(selector);
+      if (radioButton) {
+        radioButton.checked = true;
+      } else {
+        console.error(
+          `Radio button with value "${circleNumber}" not found in segment "${segmentClass}".`,
+        );
+      }
 
       document.querySelector(
         `#wheel-section--${segmentClass} .number-container`,
@@ -61,6 +88,35 @@ wheelSections.forEach((section) => {
   });
   section.addEventListener("mouseout", (event) => {
     name.classList.remove("glow");
+  });
+});
+
+// Selects segment on wheel when radio button clicked
+
+// Get all radio buttons
+const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+// Add event listener to each radio button
+radioButtons.forEach((radioButton) => {
+  radioButton.addEventListener("change", function () {
+    // Get the circle number from the radio button value
+    const circleNumber = numberToWord(this.value);
+
+    // Get the ID of the parent element
+    const parentId = this.parentElement.parentElement.id;
+
+    // Remove the "input--" prefix from the ID
+    const segmentClass = parentId.substring("input--".length);
+
+    // Select the corresponding segment based on the circle number
+    const segment = document.querySelector(
+      `.circle.${circleNumber} .segment.${segmentClass}`,
+    );
+
+    // Click the segment
+    if (segment) {
+      segment.click();
+    }
   });
 });
 
