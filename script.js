@@ -78,21 +78,6 @@ circles.forEach((circle) => {
   });
 });
 
-// querySelectorAll selects all elements whose ID starts with "wheel-section--"
-const wheelSections = document.querySelectorAll("[id^='wheel-section--']");
-
-wheelSections.forEach((section) => {
-  const sectionId = section.id.replace("wheel-section--", ""); // Extract the section's name from its ID
-  const name = document.getElementById(`name--${sectionId}`); // Dynamically get the corresponding name element
-
-  section.addEventListener("mouseover", (event) => {
-    name.classList.add("glow");
-  });
-  section.addEventListener("mouseout", (event) => {
-    name.classList.remove("glow");
-  });
-});
-
 // Selects segment on wheel when radio button clicked
 
 // Add event listener to each radio button
