@@ -291,10 +291,6 @@ button {
   padding: 5px;
 }
 
-/* *[id^="input--"] {
-  display: none;
-} */
-
 #submission-status {
   margin-top: 1rem;
 }
