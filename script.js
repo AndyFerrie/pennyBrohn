@@ -37,13 +37,9 @@ circles.forEach((circle) => {
     if (clickedSegment) {
       const segmentClass = clickedSegment.classList[1];
 
-      // Get the circle number
+      // // Get the circle number
       const circleNumberWord = circle.classList[1];
       const circleNumber = wordToInt(circleNumberWord);
-
-      // Update the value of the input element
-      document.querySelector(`#input--${segmentClass}`).value =
-        parseInt(circleNumber);
 
       // Constructing the selector for the radio button based on segmentClass
       const selector = `#input--${segmentClass} input[type="radio"][value="${parseInt(circleNumber)}"]`;
@@ -57,10 +53,6 @@ circles.forEach((circle) => {
           `Radio button with value "${circleNumber}" not found in segment "${segmentClass}".`,
         );
       }
-
-      document.querySelector(
-        `#wheel-section--${segmentClass} .number-container`,
-      ).innerHTML = `= ${circleNumber}`;
 
       // Loop through all circles to remove "selected" class from segments with the same class
       circles.forEach((otherCircle) => {
