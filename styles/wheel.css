@@ -1,0 +1,218 @@
+/* Rest & Relax/Connect Purple (#CAC7F2)*/
+.segment.rest-and-relax:hover,
+.segment.rest-and-relax.selected {
+  background-color: #cac7f2;
+}
+/* Eat Well/Practical Matters Blue (#64DCD2)*/
+.segment.eat-well:hover,
+.segment.eat-well.selected {
+  background-color: #64dcd2;
+}
+/* Move More Blue (#D2F0F0)*/
+.segment.move-more:hover,
+.segment.move-more.selected {
+  background-color: #d2f0f0;
+}
+/* Lift Your Spirits Yellow (#FFDC50)*/
+.segment.lift-your-spirits:hover,
+.segment.lift-your-spirits.selected {
+  background-color: #ffdc50;
+}
+/* Connect Blue (#8EA0C8)*/
+.segment.connect:hover,
+.segment.connect.selected {
+  background-color: #8ea0c8;
+}
+/* Practical Matters Green (#D7FAAF)*/
+.segment.practical-matters:hover,
+.segment.practical-matters.selected {
+  background-color: #d7faaf;
+}
+/* Mind Matters Orange (#FF8B00)*/
+.segment.mind-and-emotions:hover,
+.segment.mind-and-emotions.selected {
+  background-color: #ff8b00;
+}
+/* Feel Better Pink (#FFE1DF)*/
+.segment.physical-comfort:hover,
+.segment.physical-comfort.selected {
+  background-color: #ffe1df;
+}
+
+.segment {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 50%, 100% 0, 100% 50%);
+  transform-origin: 50% 50%;
+}
+
+.overlay-segment {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+}
+
+.overlay-segment:nth-child(1),
+.segment.rest-and-relax {
+  transform: rotate(22.5deg);
+}
+
+.overlay-segment:nth-child(2),
+.segment.eat-well {
+  transform: rotate(67.5deg);
+}
+
+.overlay-segment:nth-child(3),
+.segment.move-more {
+  transform: rotate(112.5deg);
+}
+
+.overlay-segment:nth-child(4),
+.segment.lift-your-spirits {
+  transform: rotate(157.5deg);
+}
+
+.overlay-segment:nth-child(5),
+.segment.connect {
+  transform: rotate(202.5deg);
+}
+
+.overlay-segment:nth-child(6),
+.segment.practical-matters {
+  transform: rotate(247.5deg);
+}
+
+.overlay-segment:nth-child(7),
+.segment.mind-and-emotions {
+  transform: rotate(292.5deg);
+}
+
+.overlay-segment:nth-child(8),
+.segment.physical-comfort {
+  transform: rotate(337.5deg);
+}
+
+.circle-column {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 650px;
+  height: 650px;
+}
+
+.circle {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px white;
+}
+
+.circle.base {
+  width: 600px;
+  height: 600px;
+  background-color: #f7f6f6;
+}
+
+.circle.six {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  box-shadow: 0 0 6px #9d9d9d;
+}
+
+.circle.five {
+  width: 500px;
+  height: 500px;
+}
+
+.circle.four {
+  width: 405px;
+  height: 405px;
+}
+
+.circle.three {
+  width: 315px;
+  height: 315px;
+}
+
+.circle.two {
+  width: 230px;
+  height: 230px;
+}
+
+.circle.one {
+  width: 150px;
+  height: 150px;
+}
+
+.circle.zero {
+  width: 75px;
+  height: 75px;
+}
+
+.overlay-circle,
+.overlay-names {
+  z-index: 100;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  pointer-events: none;
+}
+
+.name {
+  z-index: 102;
+  position: absolute;
+  font-size: 24px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  background-color: #f7f6f6e4;
+}
+
+#name--rest-and-relax {
+  margin: 267px auto auto 487px;
+}
+
+#name--eat-well {
+  margin: 438px auto auto 412px;
+}
+
+#name--move-more {
+  margin: 526px auto auto 236px;
+}
+
+#name--lift-your-spirits {
+  margin: 424px auto auto 88px;
+}
+
+#name--connect {
+  margin: 281px auto auto 24px;
+}
+
+#name--practical-matters {
+  margin: 102px auto auto 88px;
+}
+
+#name--mind-and-emotions {
+  margin: 21px auto auto 248px;
+}
+
+#name--physical-comfort {
+  margin: 102px auto auto 414px;
+}
