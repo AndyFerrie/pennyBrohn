@@ -33,7 +33,14 @@ h2 {
 }
 
 p {
+  font-size: 18px;
   margin: 1rem 0;
+}
+
+label,
+legend {
+  font-size: 16px;
+  margin-top: 0.5rem;
 }
 
 .wheel-section {
