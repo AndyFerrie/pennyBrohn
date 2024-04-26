@@ -3,36 +3,43 @@
 .segment.rest-and-relax.selected {
   background-color: #cac7f2;
 }
+
 /* Eat Well/Practical Matters Blue (#64DCD2)*/
 .segment.eat-well:hover,
 .segment.eat-well.selected {
   background-color: #64dcd2;
 }
+
 /* Move More Blue (#D2F0F0)*/
 .segment.move-more:hover,
 .segment.move-more.selected {
   background-color: #d2f0f0;
 }
+
 /* Lift Your Spirits Yellow (#FFDC50)*/
 .segment.lift-your-spirits:hover,
 .segment.lift-your-spirits.selected {
   background-color: #ffdc50;
 }
+
 /* Connect Blue (#8EA0C8)*/
 .segment.connect:hover,
 .segment.connect.selected {
   background-color: #8ea0c8;
 }
+
 /* Practical Matters Green (#D7FAAF)*/
 .segment.practical-matters:hover,
 .segment.practical-matters.selected {
   background-color: #d7faaf;
 }
+
 /* Mind Matters Orange (#FF8B00)*/
 .segment.mind-and-emotions:hover,
 .segment.mind-and-emotions.selected {
   background-color: #ff8b00;
 }
+
 /* Feel Better Pink (#FFE1DF)*/
 .segment.physical-comfort:hover,
 .segment.physical-comfort.selected {
@@ -46,16 +53,6 @@
   height: 100%;
   clip-path: polygon(50% 50%, 100% 0, 100% 50%);
   transform-origin: 50% 50%;
-}
-
-.overlay-segment {
-  position: absolute;
-  width: 50%;
-  height: 2px;
-  background-color: white;
-  top: 50%;
-  left: 50%;
-  transform-origin: 0 0;
 }
 
 .overlay-segment:nth-child(1),
@@ -106,12 +103,22 @@
   margin-left: 2rem;
 }
 
+.overlay-segment {
+  position: absolute;
+  width: 50%;
+  height: 0.125rem;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+}
+
 .circle-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 650px;
-  height: 650px;
+  min-width: 40.625rem;
+  height: 40.625rem;
 }
 
 .circle {
@@ -119,100 +126,100 @@
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 0.125rem white;
 }
 
 .circle.base {
-  width: 600px;
-  height: 600px;
+  width: 37.5rem;
+  height: 37.5rem;
   background-color: #f7f6f6;
 }
 
 .circle.six {
   position: relative;
-  width: 600px;
-  height: 600px;
-  box-shadow: 0 0 6px #9d9d9d;
+  width: 37.5rem;
+  height: 37.5rem;
+  box-shadow: 0 0 0.375rem #9d9d9d;
 }
 
 .circle.five {
-  width: 500px;
-  height: 500px;
+  width: 31.25rem;
+  height: 31.25rem;
 }
 
 .circle.four {
-  width: 405px;
-  height: 405px;
+  width: 25.3125rem;
+  height: 25.3125rem;
 }
 
 .circle.three {
-  width: 315px;
-  height: 315px;
+  width: 19.6875rem;
+  height: 19.6875rem;
 }
 
 .circle.two {
-  width: 230px;
-  height: 230px;
+  width: 14.375rem;
+  height: 14.375rem;
 }
 
 .circle.one {
-  width: 150px;
-  height: 150px;
+  width: 9.375rem;
+  height: 9.375rem;
 }
 
 .circle.zero {
-  width: 75px;
-  height: 75px;
+  width: 4.6875rem;
+  height: 4.6875rem;
 }
 
 .overlay-circle,
 .overlay-names {
   z-index: 100;
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 37.5rem;
+  height: 37.5rem;
   pointer-events: none;
 }
 
 .name {
   z-index: 102;
   position: absolute;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
   width: fit-content;
-  background-color: #f7f6f6e4;
+  background-color: rgba(247, 246, 246, 0.89);
 }
 
 #name--rest-and-relax {
-  margin: 267px auto auto 487px;
+  margin: 16.6875rem auto auto 30.4375rem;
 }
 
 #name--eat-well {
-  margin: 438px auto auto 412px;
+  margin: 27.8125rem auto auto 25.75rem;
 }
 
 #name--move-more {
-  margin: 526px auto auto 236px;
+  margin: 33.25rem auto auto 14.75rem;
 }
 
 #name--lift-your-spirits {
-  margin: 424px auto auto 88px;
+  margin: 26.5rem auto auto 5.5rem;
 }
 
 #name--connect {
-  margin: 281px auto auto 24px;
+  margin: 17.5625rem auto auto 1.5rem;
 }
 
 #name--practical-matters {
-  margin: 102px auto auto 88px;
+  margin: 6.375rem auto auto 5.5rem;
 }
 
 #name--mind-and-emotions {
-  margin: 21px auto auto 248px;
+  margin: 1.3125rem auto auto 15.5rem;
 }
 
 #name--physical-comfort {
-  margin: 102px auto auto 414px;
+  margin: 6.375rem auto auto 25.875rem;
 }
