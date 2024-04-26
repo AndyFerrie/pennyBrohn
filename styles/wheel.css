@@ -283,3 +283,9 @@
     font-size: calc(0.5 * 16px);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .circle-column {
+    display: none;
+  }
+}
