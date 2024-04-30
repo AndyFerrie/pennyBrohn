@@ -1,0 +1,273 @@
+/* Rest & Relax/Connect Purple (#CAC7F2)*/
+.segment.rest-and-relax:hover,
+.segment.rest-and-relax.selected {
+  background-color: #cac7f2;
+}
+
+/* Eat Well/Practical Matters Blue (#64DCD2)*/
+.segment.eat-well:hover,
+.segment.eat-well.selected {
+  background-color: #64dcd2;
+}
+
+/* Move More Blue (#D2F0F0)*/
+.segment.move-more:hover,
+.segment.move-more.selected {
+  background-color: #d2f0f0;
+}
+
+/* Lift Your Spirits Yellow (#FFDC50)*/
+.segment.lift-your-spirits:hover,
+.segment.lift-your-spirits.selected {
+  background-color: #ffdc50;
+}
+
+/* Connect Blue (#8EA0C8)*/
+.segment.connect:hover,
+.segment.connect.selected {
+  background-color: #8ea0c8;
+}
+
+/* Practical Matters Green (#D7FAAF)*/
+.segment.practical-matters:hover,
+.segment.practical-matters.selected {
+  background-color: #d7faaf;
+}
+
+/* Mind Matters Orange (#FF8B00)*/
+.segment.mind-and-emotions:hover,
+.segment.mind-and-emotions.selected {
+  background-color: #ff8b00;
+}
+
+/* Feel Better Pink (#FFE1DF)*/
+.segment.physical-comfort:hover,
+.segment.physical-comfort.selected {
+  background-color: #ffe1df;
+}
+
+.segment {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 50%, 100% -35%, 100% 50%);
+  transform-origin: 50% 50%;
+}
+
+.overlay-segment:nth-child(1),
+.segment.rest-and-relax {
+  transform: rotate(30deg);
+}
+
+.overlay-segment:nth-child(2),
+.segment.eat-well {
+  transform: rotate(90deg);
+}
+
+.overlay-segment:nth-child(3),
+.segment.move-more {
+  transform: rotate(150deg);
+}
+
+.overlay-segment:nth-child(4),
+.segment.lift-your-spirits {
+  transform: rotate(210deg);
+}
+
+.overlay-segment:nth-child(5),
+.segment.mind-and-emotions {
+  transform: rotate(270deg);
+}
+
+.overlay-segment:nth-child(6),
+.segment.physical-comfort {
+  transform: rotate(330deg);
+}
+
+.circle-column {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.overlay-segment {
+  position: absolute;
+  width: 50%;
+  height: 0.125rem;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40.625rem;
+  height: 40.625rem;
+}
+
+.circle {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 0.125rem white;
+}
+
+.circle.base {
+  width: 37.5rem;
+  height: 37.5rem;
+  background-color: #f7f6f6;
+}
+
+.circle.six {
+  position: relative;
+  width: 37.5rem;
+  height: 37.5rem;
+  box-shadow: 0 0 0.375rem #9d9d9d;
+}
+
+.circle.five {
+  width: 31.25rem;
+  height: 31.25rem;
+}
+
+.circle.four {
+  width: 25.3125rem;
+  height: 25.3125rem;
+}
+
+.circle.three {
+  width: 19.6875rem;
+  height: 19.6875rem;
+}
+
+.circle.two {
+  width: 14.375rem;
+  height: 14.375rem;
+}
+
+.circle.one {
+  width: 9.375rem;
+  height: 9.375rem;
+}
+
+.circle.zero {
+  width: 4.6875rem;
+  height: 4.6875rem;
+}
+
+.overlay-circle,
+.overlay-names {
+  z-index: 100;
+  position: absolute;
+  width: 37.5rem;
+  height: 37.5rem;
+  pointer-events: none;
+}
+
+.name {
+  z-index: 102;
+  position: absolute;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+  width: fit-content;
+  background-color: rgba(247, 246, 246, 0.89);
+}
+
+#name--rest-and-relax {
+  margin: 16rem auto auto 30.4375rem;
+}
+
+#name--eat-well {
+  margin: 30rem auto auto 23rem;
+}
+
+#name--move-more {
+  margin: 30rem auto auto 9rem;
+}
+
+#name--lift-your-spirits {
+  margin: 16rem auto auto 2rem;
+}
+
+#name--mind-and-emotions {
+  margin: 5rem auto auto 9rem;
+}
+
+#name--physical-comfort {
+  margin: 5rem auto auto 23rem;
+}
+
+@media screen and (min-width: 1445px) {
+  :root {
+    font-size: calc(1.15 * 16px);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  :root {
+    font-size: calc(0.9 * 16px);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  :root {
+    font-size: calc(0.85 * 16px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    font-size: calc(0.8 * 16px);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  :root {
+    font-size: calc(0.75 * 16px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    font-size: calc(0.7 * 16px);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  :root {
+    font-size: calc(0.65 * 16px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    font-size: calc(0.6 * 16px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  :root {
+    font-size: calc(0.55 * 16px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    font-size: calc(0.5 * 16px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .circle-column {
+    display: none;
+  }
+}
