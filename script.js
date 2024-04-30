@@ -113,7 +113,7 @@ function validateSelection() {
     "connect",
     "practical-matters",
     "mind-and-emotions",
-    "physical-comfort",
+    "feel-better",
   ];
 
   // Check if at least one segment from each category has been selected

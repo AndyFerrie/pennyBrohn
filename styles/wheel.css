@@ -41,8 +41,8 @@
 }
 
 /* Feel Better Pink (#FFE1DF)*/
-.segment.physical-comfort:hover,
-.segment.physical-comfort.selected {
+.segment.feel-better:hover,
+.segment.feel-better.selected {
   background-color: #ffe1df;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .overlay-segment:nth-child(8),
-.segment.physical-comfort {
+.segment.feel-better {
   transform: rotate(337.5deg);
 }
 
@@ -220,7 +220,7 @@
   margin: 1.3125rem auto auto 15.5rem;
 }
 
-#name--physical-comfort {
+#name--feel-better {
   margin: 6.375rem auto auto 25.875rem;
 }
 
