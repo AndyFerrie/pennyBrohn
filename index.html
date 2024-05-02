@@ -596,22 +596,65 @@
             </label>
           </fieldset>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
         <div id="email-container">
-          <label for="email"
-            >Email <span class="required-asterisk">*</span></label
+          <h3>
+            By submitting your email, you consent to Penny Brohn UK contacting
+            you via email regarding your results from the Health and Wellbeing
+            Wheel.
+          </h3>
+          <p>
+            We will send your results and personalised report within five
+            working days.
+          </p>
+          <input
+            type="checkbox"
+            id="email-consent-checkbox"
+            name="entry.7842620"
+            value="true"
+          />
+          <label for="email-consent-checkbox"
+            >Tick here if you would like to receive emails from Penny Brohn UK
+            providing updates on our service for those living with cancer and
+            fundraising communications.</label
           >
+          <p>
+            You can read our privacy policy on our website
+            https://pennybrohn.org.uk/privacy-policy/
+          </p>
+          <h3>Name <span class="required-asterisk">*</span></h3>
+          <input
+            type="text"
+            id="first-name-field"
+            name="entry.1617721055"
+            autocomplete="off"
+            required
+          />
+          <label for="first-name-field">First</label>
+          <input
+            type="text"
+            id="last-name-field"
+            name="entry.1723111726"
+            autocomplete="off"
+            required
+          />
+          <label for="last-name-field">Last</label>
+          <h3>Email <span class="required-asterisk">*</span></h3>
           <input
             type="email"
+            id="email-field"
             name="entry.641007839"
             autocomplete="off"
             required
           />
+          <label for="email-field">Email</label>
+          <input
+            type="email"
+            id="confirm-email-field"
+            name="confirm-email-field"
+            autocomplete="off"
+            required
+          />
+          <label for="confirm-email-field">Confirm Email</label>
         </div>
         <div id="submission-status"></div>
         <button type="submit">Submit</button>
