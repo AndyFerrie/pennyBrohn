@@ -606,6 +606,55 @@
             We will send your results and personalised report within five
             working days.
           </p>
+
+          <h3>Name <span class="required-asterisk">*</span></h3>
+          <div class="input-container">
+            <div class="input-field-container">
+              <input
+                type="text"
+                id="first-name-field"
+                name="entry.1617721055"
+                autocomplete="off"
+                required
+              />
+              <label for="first-name-field">First</label>
+            </div>
+            <div class="input-field-container">
+              <input
+                type="text"
+                id="last-name-field"
+                name="entry.1723111726"
+                autocomplete="off"
+                required
+              />
+              <label for="last-name-field">Last</label>
+            </div>
+          </div>
+          <h3>Email <span class="required-asterisk">*</span></h3>
+          <div class="input-container">
+            <div class="input-field-container">
+              <input
+                type="email"
+                id="email-field"
+                name="entry.641007839"
+                autocomplete="off"
+                required
+              />
+              <label for="email-field">Email</label>
+            </div>
+            <div class="input-field-container">
+              <input
+                type="email"
+                id="confirm-email-field"
+                name="confirm-email-field"
+                autocomplete="off"
+                required
+              />
+              <label for="confirm-email-field">Confirm Email</label>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-container">
           <input
             type="checkbox"
             id="email-consent-checkbox"
@@ -615,46 +664,12 @@
           <label for="email-consent-checkbox"
             >Tick here if you would like to receive emails from Penny Brohn UK
             providing updates on our service for those living with cancer and
-            fundraising communications.</label
+            fundraising communications.<br /><br />You can read our privacy
+            policy on our website:
+            <a href="https://pennybrohn.org.uk/privacy-policy/"
+              >Privacy Policy</a
+            ></label
           >
-          <p>
-            You can read our privacy policy on our website
-            https://pennybrohn.org.uk/privacy-policy/
-          </p>
-          <h3>Name <span class="required-asterisk">*</span></h3>
-          <input
-            type="text"
-            id="first-name-field"
-            name="entry.1617721055"
-            autocomplete="off"
-            required
-          />
-          <label for="first-name-field">First</label>
-          <input
-            type="text"
-            id="last-name-field"
-            name="entry.1723111726"
-            autocomplete="off"
-            required
-          />
-          <label for="last-name-field">Last</label>
-          <h3>Email <span class="required-asterisk">*</span></h3>
-          <input
-            type="email"
-            id="email-field"
-            name="entry.641007839"
-            autocomplete="off"
-            required
-          />
-          <label for="email-field">Email</label>
-          <input
-            type="email"
-            id="confirm-email-field"
-            name="confirm-email-field"
-            autocomplete="off"
-            required
-          />
-          <label for="confirm-email-field">Confirm Email</label>
         </div>
         <div id="submission-status"></div>
         <button type="submit">Submit</button>
