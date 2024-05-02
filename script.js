@@ -79,8 +79,6 @@ circles.forEach((circle) => {
 });
 
 // Selects segment on wheel when radio button clicked
-
-// Add event listener to each radio button
 radioButtons.forEach((radioButton) => {
   radioButton.addEventListener("change", function () {
     // Get the circle number from the radio button value
@@ -128,34 +126,6 @@ function validateSelection() {
   return true;
 }
 
-// Function to change the submit button text to indicate form submission
-function setSubmissionStatus(text) {
-  document.getElementById("submission-status").innerHTML = text;
-}
-
-// Function to handle form submission
-function handleSubmit(event) {
-  event.preventDefault();
-
-  // Change the submit button text to indicate form submission
-  setSubmissionStatus("Submitting...");
-
-  // Check if at least one segment from each category has been selected
-  if (validateSelection() && validateEmails()) {
-    // If all categories have been selected, submit the form
-    event.target.submit();
-    // Change the submit button text to indicate form submission
-    setSubmissionStatus("Form Submitted");
-  } else if (!validateEmails()) {
-    setSubmissionStatus("Please confirm email address");
-  } else {
-    // If any category is missing a selected segment, display an error message
-    setSubmissionStatus(
-      "Unable to submit! Please make sure you choose a number between 0 - 6 for each section before submitting.",
-    );
-  }
-}
-
 // Email match validation
 const emailField = document.getElementById("email-field");
 const confirmEmailField = document.getElementById("confirm-email-field");
@@ -175,6 +145,35 @@ function validateEmails() {
 
 emailField.addEventListener("input", validateEmails);
 confirmEmailField.addEventListener("input", validateEmails);
+
+// Function to change the submit button text to indicate form submission
+function setSubmissionStatus(text) {
+  document.getElementById("submission-status").innerHTML = text;
+}
+
+// Function to handle form submission
+function handleSubmit(event) {
+  event.preventDefault();
+
+  // Check if all categories have been selected
+  const allCategoriesSelected = validateSelection();
+
+  // Check if email addresses match
+  const emailConfirmed = validateEmails();
+
+  // If all categories have been selected and email addresses match, submit the form
+  if (allCategoriesSelected && emailConfirmed) {
+    event.target.submit();
+    setSubmissionStatus("Form Submitted");
+  } else {
+    // If any category is missing a selected segment, display an error message
+    const message =
+      allCategoriesSelected && !emailConfirmed
+        ? "Please confirm email address"
+        : "Unable to submit! Please make sure you choose a number between 0 - 6 for each section before submitting.";
+    setSubmissionStatus(message);
+  }
+}
 
 // Add event listener to the form for submission
 document.querySelector("form").addEventListener("submit", handleSubmit);
