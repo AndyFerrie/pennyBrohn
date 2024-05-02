@@ -141,11 +141,13 @@ function handleSubmit(event) {
   setSubmissionStatus("Submitting...");
 
   // Check if at least one segment from each category has been selected
-  if (validateSelection()) {
+  if (validateSelection() && validateEmails()) {
     // If all categories have been selected, submit the form
     event.target.submit();
     // Change the submit button text to indicate form submission
     setSubmissionStatus("Form Submitted");
+  } else if (!validateEmails()) {
+    setSubmissionStatus("Please confirm email address");
   } else {
     // If any category is missing a selected segment, display an error message
     setSubmissionStatus(
@@ -153,6 +155,26 @@ function handleSubmit(event) {
     );
   }
 }
+
+// Email match validation
+const emailField = document.getElementById("email-field");
+const confirmEmailField = document.getElementById("confirm-email-field");
+
+function validateEmails() {
+  const email = emailField.value.trim();
+  const confirmEmail = confirmEmailField.value.trim();
+
+  if (email !== confirmEmail) {
+    confirmEmailField.classList.add("error");
+    return false;
+  } else {
+    confirmEmailField.classList.remove("error");
+    return true;
+  }
+}
+
+emailField.addEventListener("input", validateEmails);
+confirmEmailField.addEventListener("input", validateEmails);
 
 // Add event listener to the form for submission
 document.querySelector("form").addEventListener("submit", handleSubmit);
