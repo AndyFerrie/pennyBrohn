@@ -103,8 +103,8 @@ fieldset {
   flex-direction: column;
 }
 
-.error,
-.error:focus {
+input[type="email"].error,
+input[type="email"].error:focus {
   border: 2px solid red;
   outline: 0;
 }
