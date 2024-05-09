@@ -10,6 +10,7 @@
   }
 
   .questions-column {
+    color: black;
     width: 100%;
     overflow-y: scroll;
     padding: 2rem 4rem 0;
@@ -29,9 +30,17 @@
     margin-left: 1rem;
   }
 
+  h3 {
+    font-size: 18px;
+  }
+
   p {
     font-size: 18px;
     margin: 1rem 0;
+  }
+
+  .required-asterisk {
+    color: red;
   }
 
   label,
@@ -67,7 +76,33 @@
   #email-container {
     display: flex;
     flex-direction: column;
-    width: 50%;
+  }
+
+  .input-container {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .input-container input {
+    max-width: 300px;
+    margin-right: 2rem;
+  }
+
+  .input-container label {
+    margin-top: 0;
+    color: #878787;
+  }
+
+  .input-field-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .error,
+  .error:focus {
+    border: 2px solid red;
+    outline: 0;
   }
 
   button {
@@ -79,6 +114,7 @@
   #submission-status {
     margin-top: 1rem;
   }
+
   /* Rest & Relax/Connect Purple (#CAC7F2)*/
   .segment.rest-and-relax:hover,
   .segment.rest-and-relax.selected {
@@ -180,6 +216,7 @@
     position: sticky;
     top: 0;
     display: flex;
+    align-items: center;
     margin-left: 2rem;
   }
 
@@ -580,25 +617,41 @@
             your life and choose a score between 6 - 0
           </legend>
           <label>
-            <input type="radio" name="entry.953612180" value="6" /> 6
+            <input type="radio" name="entry.953612180" value="6" /> 6 - Working
+            closely with a supportive healthcare team to manage treatment side
+            effects effectively, feeling empowered and seeing improvement in
+            overall well-being.
           </label>
           <label>
-            <input type="radio" name="entry.953612180" value="5" /> 5
+            <input type="radio" name="entry.953612180" value="5" /> 5 -
+            Effectively managing side effects, experiencing minimal discomfort
+            or disruption to well-being.
           </label>
           <label>
-            <input type="radio" name="entry.953612180" value="4" /> 4
+            <input type="radio" name="entry.953612180" value="4" /> 4 -
+            Successfully managing side effects with minimal disruption to daily
+            life.
           </label>
           <label>
-            <input type="radio" name="entry.953612180" value="3" /> 3
+            <input type="radio" name="entry.953612180" value="3" /> 3 - Managing
+            side effects reasonably well but seeking assistance for persistent
+            or worsening symptoms.
           </label>
           <label>
-            <input type="radio" name="entry.953612180" value="2" /> 2
+            <input type="radio" name="entry.953612180" value="2" /> 2 -
+            Struggling with side effects but finding some relief with occasional
+            interventions or adjustments.
           </label>
           <label>
-            <input type="radio" name="entry.953612180" value="1" /> 1
+            <input type="radio" name="entry.953612180" value="1" /> 1 -
+            Experiencing moderate side effects but occasionally finding relief
+            through self-care measures.
           </label>
           <label>
-            <input type="radio" name="entry.953612180" value="0" /> 0
+            <input type="radio" name="entry.953612180" value="0" /> 0 -
+            Struggling with severe side effects of cancer treatment with no
+            guidance or support, feeling helpless and unable to alleviate
+            symptoms.
           </label>
         </fieldset>
       </div>
@@ -621,25 +674,39 @@
             your life and choose a score between 6 - 0
           </legend>
           <label>
-            <input type="radio" name="entry.266663822" value="6" /> 6
+            <input type="radio" name="entry.266663822" value="6" /> 6 -
+            Establishing a consistent sleep routine, practicing relaxation
+            techniques regularly, and feeling rejuvenated and well-rested.
           </label>
           <label>
-            <input type="radio" name="entry.266663822" value="5" /> 5
+            <input type="radio" name="entry.266663822" value="5" /> 5 -
+            Mastering techniques for rest and relaxation, experiencing
+            consistently restorative sleep and relaxation.
           </label>
           <label>
-            <input type="radio" name="entry.266663822" value="4" /> 4
+            <input type="radio" name="entry.266663822" value="4" /> 4 -
+            Consistently achieving restful sleep and relaxation with minimal
+            disruptions.
           </label>
           <label>
-            <input type="radio" name="entry.266663822" value="3" /> 3
+            <input type="radio" name="entry.266663822" value="3" /> 3 -
+            Generally able to achieve adequate rest and relaxation but
+            experiencing occasional disruptions.
           </label>
           <label>
-            <input type="radio" name="entry.266663822" value="2" /> 2
+            <input type="radio" name="entry.266663822" value="2" /> 2 -
+            Struggling with sleep or relaxation at times but finding occasional
+            moments of respite.
           </label>
           <label>
-            <input type="radio" name="entry.266663822" value="1" /> 1
+            <input type="radio" name="entry.266663822" value="1" /> 1 -
+            Experiencing occasional difficulties with sleep or relaxation but
+            finding some relief through relaxation techniques.
           </label>
           <label>
-            <input type="radio" name="entry.266663822" value="0" /> 0
+            <input type="radio" name="entry.266663822" value="0" /> 0 -
+            Constantly experiencing sleep disturbances and heightened stress
+            levels, unable to find moments of relaxation or rest.
           </label>
         </fieldset>
       </div>
@@ -662,25 +729,40 @@
             your life and choose a score between 6 - 0
           </legend>
           <label>
-            <input type="radio" name="entry.2107423106" value="6" /> 6
+            <input type="radio" name="entry.2107423106" value="6" /> 6 -
+            Following a personalized nutrition plan, enjoying a variety of
+            nourishing foods, and maintaining a healthy appetite and weight
+            despite cancer challenges.
           </label>
           <label>
-            <input type="radio" name="entry.2107423106" value="5" /> 5
+            <input type="radio" name="entry.2107423106" value="5" /> 5 -
+            Following a well-balanced diet with ease, enjoying a variety of
+            nutritious foods regularly.
           </label>
           <label>
-            <input type="radio" name="entry.2107423106" value="4" /> 4
+            <input type="radio" name="entry.2107423106" value="4" /> 4 -
+            Successfully adapting to dietary changes with minimal difficulty.
           </label>
           <label>
-            <input type="radio" name="entry.2107423106" value="3" /> 3
+            <input type="radio" name="entry.2107423106" value="3" /> 3 -
+            Managing dietary challenges reasonably well but occasionally
+            struggling with certain aspects of nutrition.
           </label>
           <label>
-            <input type="radio" name="entry.2107423106" value="2" /> 2
+            <input type="radio" name="entry.2107423106" value="2" /> 2 -
+            Struggling with appetite or dietary changes but finding some
+            satisfaction in specific foods.
           </label>
           <label>
-            <input type="radio" name="entry.2107423106" value="1" /> 1
+            <input type="radio" name="entry.2107423106" value="1" /> 1 -
+            Experiencing some challenges with eating but occasionally finding
+            enjoyment in certain foods.
           </label>
           <label>
-            <input type="radio" name="entry.2107423106" value="0" /> 0
+            <input type="radio" name="entry.2107423106" value="0" /> 0 - Dealing
+            with loss of appetite, aversion to food, and difficulties with
+            eating due to cancer treatment, resulting in malnutrition and weight
+            loss.
           </label>
         </fieldset>
       </div>
@@ -704,25 +786,41 @@
             your life and choose a score between 6 - 0
           </legend>
           <label>
-            <input type="radio" name="entry.1267682022" value="6" /> 6
+            <input type="radio" name="entry.1267682022" value="6" /> 6 -
+            Incorporating regular physical activity into daily life, finding
+            enjoyable ways to stay active despite cancer, and experiencing
+            improved physical strength and stamina.
           </label>
           <label>
-            <input type="radio" name="entry.1267682022" value="5" /> 5
+            <input type="radio" name="entry.1267682022" value="5" /> 5 -
+            Engaging in physical activity regularly with enthusiasm,
+            experiencing improved fitness and well-being.
           </label>
           <label>
-            <input type="radio" name="entry.1267682022" value="4" /> 4
+            <input type="radio" name="entry.1267682022" value="4" /> 4 -
+            Successfully maintaining a regular exercise routine with minimal
+            difficulty.
           </label>
           <label>
-            <input type="radio" name="entry.1267682022" value="3" /> 3
+            <input type="radio" name="entry.1267682022" value="3" /> 3 -
+            Managing to incorporate some physical activity into daily life but
+            occasionally encountering challenges.
           </label>
           <label>
-            <input type="radio" name="entry.1267682022" value="2" /> 2
+            <input type="radio" name="entry.1267682022" value="2" /> 2 -
+            Struggling with physical activity but finding occasional motivation
+            to engage in gentle movement.
           </label>
           <label>
-            <input type="radio" name="entry.1267682022" value="1" /> 1
+            <input type="radio" name="entry.1267682022" value="1" /> 1 -
+            Experiencing difficulties with physical activity but occasionally
+            finding enjoyment in light exercises.
           </label>
           <label>
-            <input type="radio" name="entry.1267682022" value="0" /> 0
+            <input type="radio" name="entry.1267682022" value="0" /> 0 - Being
+            physically inactive due to cancer-related fatigue or physical
+            limitations, feeling immobile and lacking motivation to engage in
+            any form of exercise.
           </label>
         </fieldset>
       </div>
@@ -745,25 +843,40 @@
             your life and choose a score between 6 - 0
           </legend>
           <label>
-            <input type="radio" name="entry.956040732" value="6" /> 6
+            <input type="radio" name="entry.956040732" value="6" /> 6 - Actively
+            seeking out activities or hobbies that bring happiness, surrounding
+            oneself with supportive and uplifting people, and maintaining a
+            positive outlook even during challenging times.
           </label>
           <label>
-            <input type="radio" name="entry.956040732" value="5" /> 5
+            <input type="radio" name="entry.956040732" value="5" /> 5 -
+            Maintaining a consistently positive outlook and finding happiness in
+            various aspects of life.
           </label>
           <label>
-            <input type="radio" name="entry.956040732" value="4" /> 4
+            <input type="radio" name="entry.956040732" value="4" /> 4 - Feeling
+            optimistic and finding joy in daily life with occasional boosts from
+            supportive interactions or activities.
           </label>
           <label>
-            <input type="radio" name="entry.956040732" value="3" /> 3
+            <input type="radio" name="entry.956040732" value="3" /> 3 -
+            Maintaining a generally positive outlook but occasionally needing
+            support to lift spirits during difficult times.
           </label>
           <label>
-            <input type="radio" name="entry.956040732" value="2" /> 2
+            <input type="radio" name="entry.956040732" value="2" /> 2 - Finding
+            occasional sources of happiness but often feeling weighed down by
+            negative emotions.
           </label>
           <label>
-            <input type="radio" name="entry.956040732" value="1" /> 1
+            <input type="radio" name="entry.956040732" value="1" /> 1 -
+            Occasionally feeling uplifted by small moments of joy but struggling
+            to maintain a positive outlook.
           </label>
           <label>
-            <input type="radio" name="entry.956040732" value="0" /> 0
+            <input type="radio" name="entry.956040732" value="0" /> 0 - Feeling
+            constantly downhearted and devoid of hope, struggling to find joy or
+            positivity in any aspect of life.
           </label>
         </fieldset>
       </div>
@@ -786,25 +899,40 @@
             your life and choose a score between 6 - 0
           </legend>
           <label>
-            <input type="radio" name="entry.377755946" value="6" /> 6
+            <input type="radio" name="entry.377755946" value="6" /> 6 - Actively
+            participating in support groups, reaching out to friends and family
+            for emotional support, and feeling a sense of belonging within a
+            supportive community of fellow cancer survivors.
           </label>
           <label>
-            <input type="radio" name="entry.377755946" value="5" /> 5
+            <input type="radio" name="entry.377755946" value="5" /> 5 - Actively
+            participating in social activities and support groups, feeling a
+            sense of belonging within a community.
           </label>
           <label>
-            <input type="radio" name="entry.377755946" value="4" /> 4
+            <input type="radio" name="entry.377755946" value="4" /> 4 - Feeling
+            connected to a supportive network of friends and family with
+            occasional feelings of loneliness.
           </label>
           <label>
-            <input type="radio" name="entry.377755946" value="3" /> 3
+            <input type="radio" name="entry.377755946" value="3" /> 3 -
+            Maintaining connections with others but occasionally feeling
+            isolated or unsupported.
           </label>
           <label>
-            <input type="radio" name="entry.377755946" value="2" /> 2
+            <input type="radio" name="entry.377755946" value="2" /> 2 - Finding
+            occasional comfort in social interactions but generally feeling
+            disconnected from others.
           </label>
           <label>
-            <input type="radio" name="entry.377755946" value="1" /> 1
+            <input type="radio" name="entry.377755946" value="1" /> 1 -
+            Occasionally reaching out to others but feeling disconnected and
+            isolated most of the time.
           </label>
           <label>
-            <input type="radio" name="entry.377755946" value="0" /> 0
+            <input type="radio" name="entry.377755946" value="0" /> 0 -
+            Isolating oneself from others, feeling disconnected and alone in
+            dealing with cancer diagnosis and treatment.
           </label>
         </fieldset>
       </div>
@@ -828,42 +956,117 @@
             your life and choose a score between 6 - 0
           </legend>
           <label>
-            <input type="radio" name="entry.947782152" value="6" /> 6
+            <input type="radio" name="entry.947782152" value="6" /> 6 -
+            Accessing practical support services, effectively managing work and
+            home responsibilities, and feeling supported and empowered to
+            navigate through practical challenges associated with cancer.
           </label>
           <label>
-            <input type="radio" name="entry.947782152" value="5" /> 5
+            <input type="radio" name="entry.947782152" value="5" /> 5 -
+            Successfully navigating practical challenges with ease and feeling
+            confident in managing responsibilities.
           </label>
           <label>
-            <input type="radio" name="entry.947782152" value="4" /> 4
+            <input type="radio" name="entry.947782152" value="4" /> 4 -
+            Effectively managing practical matters with occasional assistance or
+            resources.
           </label>
           <label>
-            <input type="radio" name="entry.947782152" value="3" /> 3
+            <input type="radio" name="entry.947782152" value="3" /> 3 - Managing
+            practical matters reasonably well but occasionally needing support
+            to address specific challenges.
           </label>
           <label>
-            <input type="radio" name="entry.947782152" value="2" /> 2
+            <input type="radio" name="entry.947782152" value="2" /> 2 - Finding
+            occasional solutions to practical challenges but struggling to
+            manage them consistently.
           </label>
           <label>
-            <input type="radio" name="entry.947782152" value="1" /> 1
+            <input type="radio" name="entry.947782152" value="1" /> 1 -
+            Occasionally feeling overwhelmed by practical challenges but unsure
+            how to address them effectively.
           </label>
           <label>
-            <input type="radio" name="entry.947782152" value="0" /> 0
+            <input type="radio" name="entry.947782152" value="0" /> 0 -
+            Overwhelmed by financial burdens, struggling to balance work and
+            home responsibilities with cancer treatment, and lacking resources
+            or guidance to address practical challenges.
           </label>
         </fieldset>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
       <div id="email-container">
-        <label for="email">Email address:</label>
+        <h3>
+          By submitting your email, you consent to Penny Brohn UK contacting you
+          via email regarding your results from the Health and Wellbeing Wheel.
+        </h3>
+        <p>
+          We will send your results and personalised report within five working
+          days.
+        </p>
+
+        <h3>Name <span class="required-asterisk">*</span></h3>
+        <div class="input-container">
+          <div class="input-field-container">
+            <input
+              type="text"
+              id="first-name-field"
+              name="entry.1617721055"
+              autocomplete="off"
+              required
+            />
+            <label for="first-name-field">First</label>
+          </div>
+          <div class="input-field-container">
+            <input
+              type="text"
+              id="last-name-field"
+              name="entry.1723111726"
+              autocomplete="off"
+              required
+            />
+            <label for="last-name-field">Last</label>
+          </div>
+        </div>
+        <h3>Email <span class="required-asterisk">*</span></h3>
+        <div class="input-container">
+          <div class="input-field-container">
+            <input
+              type="email"
+              id="email-field"
+              name="entry.641007839"
+              autocomplete="off"
+              required
+            />
+            <label for="email-field">Email</label>
+          </div>
+          <div class="input-field-container">
+            <input
+              type="email"
+              id="confirm-email-field"
+              name="confirm-email-field"
+              autocomplete="off"
+              required
+            />
+            <label for="confirm-email-field">Confirm Email</label>
+          </div>
+        </div>
+      </div>
+      <div class="checkbox-container">
         <input
-          type="email"
-          name="entry.641007839"
-          autocomplete="off"
-          required
+          type="checkbox"
+          id="email-consent-checkbox"
+          name="entry.7842620"
+          value="true"
         />
+        <label for="email-consent-checkbox"
+          >Tick here if you would like to receive emails from Penny Brohn UK
+          providing updates on our service for those living with cancer and
+          fundraising communications.<br /><br />You can read our privacy policy
+          on our website:
+          <a href="https://pennybrohn.org.uk/privacy-policy/"
+            >Privacy Policy</a
+          ></label
+        >
       </div>
       <div id="submission-status"></div>
       <button type="submit">Submit</button>
@@ -953,8 +1156,6 @@
   });
 
   // Selects segment on wheel when radio button clicked
-
-  // Add event listener to each radio button
   radioButtons.forEach((radioButton) => {
     radioButton.addEventListener("change", function () {
       // Get the circle number from the radio button value
@@ -1002,6 +1203,26 @@
     return true;
   }
 
+  // Email match validation
+  const emailField = document.getElementById("email-field");
+  const confirmEmailField = document.getElementById("confirm-email-field");
+
+  function validateEmails() {
+    const email = emailField.value.trim();
+    const confirmEmail = confirmEmailField.value.trim();
+
+    if (email !== confirmEmail) {
+      confirmEmailField.classList.add("error");
+      return false;
+    } else {
+      confirmEmailField.classList.remove("error");
+      return true;
+    }
+  }
+
+  emailField.addEventListener("input", validateEmails);
+  confirmEmailField.addEventListener("input", validateEmails);
+
   // Function to change the submit button text to indicate form submission
   function setSubmissionStatus(text) {
     document.getElementById("submission-status").innerHTML = text;
@@ -1011,20 +1232,23 @@
   function handleSubmit(event) {
     event.preventDefault();
 
-    // Change the submit button text to indicate form submission
-    setSubmissionStatus("Submitting...");
+    // Check if all categories have been selected
+    const allCategoriesSelected = validateSelection();
 
-    // Check if at least one segment from each category has been selected
-    if (validateSelection()) {
-      // If all categories have been selected, submit the form
+    // Check if email addresses match
+    const emailConfirmed = validateEmails();
+
+    // If all categories have been selected and email addresses match, submit the form
+    if (allCategoriesSelected && emailConfirmed) {
       event.target.submit();
-      // Change the submit button text to indicate form submission
       setSubmissionStatus("Form Submitted");
     } else {
       // If any category is missing a selected segment, display an error message
-      setSubmissionStatus(
-        "Unable to submit! Please make sure you choose a number between 0 - 6 for each section before submitting.",
-      );
+      const message =
+        allCategoriesSelected && !emailConfirmed
+          ? "Please confirm email address"
+          : "Unable to submit! Please make sure you choose a number between 0 - 6 for each section before submitting.";
+      setSubmissionStatus(message);
     }
   }
 
