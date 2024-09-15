@@ -1,3 +1,5 @@
+<!-- Cloud Blue #8EA0C8 Dawn Orange #FF8C00 -->
+
 <style>
   * {
     font-size: 16px;
@@ -6,7 +8,7 @@
 
   .body-container {
     display: flex;
-    height: 100vh;
+    height: 80vh;
   }
 
   .questions-column {
@@ -105,10 +107,17 @@
     outline: 0;
   }
 
-  button {
+  #wellness-wheel-submit-button {
+    background-color: #8ea0c8;
+    color: #ffffff;
     margin: 1rem 0;
     font-size: 20px;
-    padding: 5px;
+    padding: 6px 20px;
+  }
+
+  #wellness-wheel-submit-button:hover {
+    background-color: #65728e;
+    cursor: pointer;
   }
 
   #submission-status {
@@ -216,7 +225,6 @@
     position: sticky;
     top: 0;
     display: flex;
-    align-items: center;
     margin-left: 2rem;
   }
 
@@ -341,25 +349,7 @@
     margin: 6.375rem auto auto 25.875rem;
   }
 
-  @media screen and (min-width: 1445px) {
-    :root {
-      font-size: calc(1.15 * 16px);
-    }
-  }
-
-  @media screen and (max-width: 1250px) {
-    :root {
-      font-size: calc(0.9 * 16px);
-    }
-  }
-
-  @media screen and (max-width: 1100px) {
-    :root {
-      font-size: calc(0.85 * 16px);
-    }
-  }
-
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1445px) {
     :root {
       font-size: calc(0.8 * 16px);
     }
@@ -389,19 +379,10 @@
     }
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     :root {
       font-size: calc(0.55 * 16px);
     }
-  }
-
-  @media screen and (max-width: 700px) {
-    :root {
-      font-size: calc(0.5 * 16px);
-    }
-  }
-
-  @media screen and (max-width: 600px) {
     .circle-column {
       display: none;
     }
@@ -1063,7 +1044,7 @@
         >
       </div>
       <div id="submission-status"></div>
-      <button type="submit">Submit</button>
+      <button id="wellness-wheel-submit-button" type="submit">Submit</button>
     </form>
   </div>
 </div>
